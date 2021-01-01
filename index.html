@@ -19,13 +19,14 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="starshine.css">
+    <link rel="stylesheet" href="starshine.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
   <body>
+    <div class="lg-container d-sm-none d-md-none d-lg-block">
     <ul class="menu">
       <li class="to-home"><a href="#">Home</a></li>
       <li><a href="#projects">Programação</a></li>
@@ -33,45 +34,50 @@
       <li><a href="#contacts">Contato</a></li>
     </ul>
 
-    <div class="home m-auto p-4">
-
-    </div>
-    <div class="myself m-auto p-4">
+      <div class="home m-auto p-4"></div>
+      <div class="myself m-auto p-4">
         <div id="starshine">
-            <div class="template shine"></div>
+          <div class="template shine"></div>
         </div>
-      <div class="social-container">
+        <div class="social-container">
+          <img id="foto" src="img/foto.jpg" alt="Foto de Leonardo Santos" />
+          <a href="#" title="Linkedin" class="social fa fa-linkedin"></a>
+          <a href="#" title="Linkedin" class="social fa fa-github"></a>
+        </div>
+      </div>
 
-        <img id="foto" src="img/foto.jpg" alt="Foto de Leonardo Santos" />
-        <a href="#" title="Linkedin" class="social fa fa-linkedin"></a>
-        <a href="#" title="Linkedin" class="social fa fa-github"></a>
+      <div id="projects" class="page">
+        <div class="page-content">
+          <h2>Gallery</h2>
+
+          <p>Gallery with cats</p>
+        </div>
+      </div>
+
+      <div id="link" class="page">
+        <div class="page-content">
+          <h2>Links</h2>
+
+          <p>Links to blogs with cats</p>
+        </div>
+      </div>
+
+      <div id="contacts" class="page">
+        <div class="page-content">
+          <h2>Contacts</h2>
+
+          <p>Some contact form</p>
+        </div>
       </div>
     </div>
-
-    <div id="projects" class="page">
-      <div class="page-content">
-        <h2>Gallery</h2>
-
-        <p>Gallery with cats</p>
-      </div>
+    <div class="sm-container d-none d-sm-block d-md-none">
+      <ul class="sm-navbar">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
     </div>
-
-    <div id="link" class="page">
-      <div class="page-content">
-        <h2>Links</h2>
-
-        <p>Links to blogs with cats</p>
-      </div>
-    </div>
-
-    <div id="contacts" class="page">
-      <div class="page-content">
-        <h2>Contacts</h2>
-
-        <p>Some contact form</p>
-      </div>
-    </div>
-
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
       type="text/javascript"
