@@ -78,7 +78,7 @@
 				</div>
 				
 				<div class="flex-col wsize1 m-b-40 respon4">
-					<a href="https://github.com/lcds90" class="l1-txt1 p-b-30"><img src="template/img/git-logo.png" alt="" class="logo"></a>
+					<a href="https://linkedin.com/in/lcds90/" class="l1-txt1 p-b-30"><img src="template/img/git-logo.png" alt="" class="logo"></a>
 				</div>
 				</div>
 			</div>
@@ -107,5 +107,24 @@
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script>
+      axios
+        .get("https://api.github.com/users/lcds90/repos")
+        .then((req) => {
+          console.log(req.data);
+          let ul = document.createElement("ul");
+          for(let i = 0; i < req.data.length; i++) {
+          let li = document.createElement("li");
+          li.innerHTML = req.data[i].name;
+          ul.appendChild(li)
+          } 
+          console.log(ul)
+          document.querySelector("#projects").appendChild(ul)
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    </script>
 </body>
 </html>
