@@ -2,7 +2,7 @@ var once = true;
 
 document.addEventListener("DOMContentLoaded", function (event) {
   gsap.set("#body", { overflow: "hidden" });
-  detectTime("#time")
+  detectTime(".time")
   if (history.scrollRestoration) {
     history.scrollRestoration = "manual";
   } else {
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   var tl2 = gsap.timeline();
   var tl4 = gsap.timeline({ delay: 5 });
 
-  var tg1 = gsap.from("#text", {
+  var tg1 = gsap.from(".text", {
     rotation: 360,
     x: 5000,
     scale: 3,
@@ -43,23 +43,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   var tg2 = gsap.from(".texts", { y: 1000, delay: 9, duration: 2 });
 
-  tl.from("#photo", { x: 1500, duration: 4 }).from(".uk-navbar", {
+  tl.from(".photo", { x: 1500, duration: 4 }).from(".uk-navbar", {
     y: 1000,
     duration: 5,
   });
 
   tl2
-    .from("#line", { opacity: 0, width: "100%", duration: 4, stagger: 0.1 })
-    .to("#line", { width: "2px", x: 200, duration: 2.5 })
-    .to("#line", { opacity: 0, x: 300, duration: 1 })
-    .to("#line", { opacity: 1, x: -10, width: "100%", duration: 2 })
-    .to("#line", { opacity: 1, y: 1000, duration: 2 })
-    .to("#line", { display: "none", duration: 1 })
+    .from(".line", { opacity: 0, width: "100%", duration: 4, stagger: 0.1 })
+    .to(".line", { width: "2px", x: 200, duration: 2.5 })
+    .to(".line", { opacity: 0, x: 300, duration: 1 })
+    .to(".line", { opacity: 1, x: -10, width: "100%", duration: 2 })
+    .to(".line", { opacity: 1, y: 1000, duration: 2 })
+    .to(".line", { display: "none", duration: 1 })
     .set("#body", { overflow: "auto", duration: 1 });
 
   tl4
-    .to("#photo", { x: 150, duration: 1.5, ease: Circ.easeOut })
-    .to("#photo", { x: 0, duration: 2.5, ease: Circ.easeOut });
+    .to(".photo", { x: 150, duration: 1.5, ease: Circ.easeOut })
+    .to(".photo", { x: 0, duration: 2.5, ease: Circ.easeOut });
 });
 
 function setAnimations(classname, attr, cls) {
