@@ -19,77 +19,140 @@
         <div class="uk-grid-small" uk-grid>
           <div class="uk-width-1-2">
             <div class="line"></div>
-            <img class="photo animate-fade uk-responsive-width" src="img/foto.jpg" alt="" />
+            <img
+              class="photo animate-fade uk-responsive-width"
+              src="img/foto.jpg"
+              alt=""
+            />
           </div>
           <div class="text uk-width-1-2 animate-fade">
-            <p class="uk-text-lighter">
-              <span class="time"></span><br>
-              Sou<span id="intro" class="uk-text-bold"
-                > Leonardo Conceição dos Santos</span
-              >
-            </p>
-            <div class="uk-margin-small-top uk-margin-remove-bottom uk-width-1-1@s">
-              <div
-                class="uk-text-center uk-text-small uk-margin-remove uk-padding-remove"
-              >
-                Programador aspirado ao fullstack
-              </div>
-              <div
-                id="container-languages"
-                class="uk-text-center uk-background-secondary uk-margin-remove"
-              >
-                Desenvolvimento Front-End
-              </div>
+            <div
+              class="uk-text-center uk-text-small uk-margin-remove uk-padding-remove"
+            >
+              <h1 id="intro" class="uk-text-bold">
+                Leonardo Santos
+              </h1>
+              <span id="time"></span>
             </div>
-          </div>
-
-          <div class="texts uk-width-1-1 uk-margin-remove">
-            <hr class="uk-divider-icon" />
-            <div class="uk-padding-large">
-              <h3 class="uk-heading-bullet animate-right">Sobre mim</h3>
-              <p class="animate-left">
-                Desde de cedo sempre fui apaixonado por explorar tecnolgia em
-                geral e principalmente jogos, seguindo dessa ambição obtive a
-                determinação para prosseguir e seguir minha formação.
-                <br />
-                Bolsista do ProUni, realizando um tecnológo especializado em
-                Tecnolgia em Sistemas para Internet e atualmente
-              </p>
+            <div
+              id="container-intro"
+              class="uk-text-center uk-background-secondary uk-margin-remove"
+            >
+              Desenvolvimento Front-End
             </div>
-
-            <!-- <div id="photos"></div> -->
-            <!-- <hr class="uk-divider-icon"> -->
           </div>
 
           <div
-            id="onScroll"
-            class="texts uk-width-1-1 uk-margin-remove"
-            uk-grid
+            id="divAbout"
+            class="texts uk-width-1-1 uk-margin-remove uk-padding-remove-bottom"
           >
-            <div class="uk-width-1-2 uk-padding-small">
+            <hr class="uk-divider-icon" />
+            <div class="uk-padding-remove-bottom uk-padding" uk-grid>
+              <div class="uk-width-1-1 animate-fade uk-padding-remove">
+                <h2 class="uk-heading-bullet">Sobre mim</h2>
+              </div>
+
+              <div class="animate-right uk-width-1-2 uk-padding-remove">
+                <q
+                  >Desde cedo sempre fui apaixonado por tecnologia e música, e
+                  explorar-la só me fez cada vez mais estudar sobre o assunto</q
+                >
+                <hr />
+                <p class="uk-text-small">
+                  Através da influência que tive desde cedo através de jogos,
+                  acabei me interessando por questões sobre o desenvolvimento de
+                  tecnologias e inclusive até estudos sobre produção musical.
+                  <br />
+                  Seguindo dessa ambição que obtive e reflexão sobre os avanços
+                  da tecnologia com o tempo, busquei determinação para
+                  prosseguir e seguir minha formação voltado para a área do
+                  desenvolvimento.<br />
+                  <b>Bolsista do ProUni</b> realizei tecnológo especializado em
+                  sistemas para internet e atualmente estou evoluindo meus
+                  conhecimentos voltado ao desenvolvimento sobre a análise e o
+                  desenvolvimento de sistemas.<br />
+                </p>
+              </div>
+              <div
+                class="animate-left uk-padding uk-width-1-2 uk-padding-remove"
+              >
+                <img id="gif" src="img/art.gif" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="texts uk-width-1-1 uk-margin-remove" uk-grid>
+            <div id="divHability" class="uk-width-1-2 uk-padding-small">
               <div class="uk-card uk-padding-remove uk-margin-remove">
-                <h3 class="uk-heading-line uk-text-center">
+                <h2 class="uk-heading-line uk-text-center">
                   <span>Habilidades</span>
-                </h3>
+                </h2>
                 <div
-                  class="uk-card-body uk-child-width-expand"
+                  class="uk-card-body uk-child-width-1-3"
                   id="habilidades"
                   uk-grid
                 >
                   <div>
                     <div class="circle">
+                      <span class="tooltiptext-bottom">
+                        <span class="tooltip-title">Desenvolvimento Web</span><br />
+                        
+                        HTML5  <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS <span class="tooltip-small">Bootstrap, Bulma, Tailwind CSS e UIKit</span><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JS <span class="tooltip-small">Axios, AJAX, GASP, JQuery</span><br />
+                      </span>
                       <img src="img/html-css-js.png" alt="" />
                     </div>
                   </div>
 
                   <div>
                     <div class="circle">
-                      <img  class="uk-responsive-width uk-responsive-height" src="img/php.png" alt="" />
+                      <span class="tooltiptext-bottom"
+                        >Tooltip text<br />teste</span
+                      >
+                      <img
+                        class="uk-responsive-width uk-responsive-height"
+                        src="img/php.png"
+                        alt=""
+                      />
                     </div>
                   </div>
                   <div>
                     <div class="circle">
-                      <img  class="uk-responsive-width uk-responsive-height" src="img/node.png" alt="" />
+                      <span class="tooltiptext-bottom"
+                        >Tooltip text<br />teste</span
+                      >
+                      <img
+                        class="uk-responsive-width uk-responsive-height"
+                        src="img/java.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="circle">
+                      <span class="tooltiptext-top"> </span>
+                      <img
+                        class="uk-responsive-width uk-responsive-height"
+                        src="img/node.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="circle">
+                      <span class="tooltiptext-top"
+                        >Tooltip text<br />teste</span
+                      >
+                      <img class="reduce" src="img/vue.png" alt="" />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="circle">
+                      <span class="tooltiptext-top"
+                        >Tooltip text<br />teste</span
+                      >
+                      <img class="reduce" src="img/mysql.png" alt="" />
                     </div>
                   </div>
                 </div>
@@ -97,19 +160,21 @@
             </div>
             <div class="uk-width-1-2 uk-padding-small formacao">
               <div class="uk-card uk-padding-remove uk-margin-remove">
-                <h3 class="uk-heading-line uk-text-center">
+                <h2 class="uk-heading-line uk-text-center">
                   <span>Formação</span>
-                </h3>
-                <div class="uk-card-body uk-child-width-1-2 uk-padding-remove" uk-grid>
+                </h2>
+                <div
+                  class="uk-card-body uk-child-width-1-2 uk-padding-remove"
+                  uk-grid
+                >
                   <div>
                     <div class="circle">
                       <img
-                      class="uk-responsive-width uk-responsive-height"
+                        class="uk-responsive-width uk-responsive-height"
                         src="img/unifcv.png"
                         alt="Logo UNIFCV - Centro Universitário Cidade Verde"
                       />
                     </div>
-                    
                   </div>
                   <div>
                     <p>
@@ -122,7 +187,7 @@
                   <div>
                     <div class="circle">
                       <img
-                      class="uk-responsive-width uk-responsive-height"
+                        class="uk-responsive-width uk-responsive-height"
                         id="uninove"
                         src="img/uninove.png"
                         alt="Logo UNINOVE - Universidade Nove de Julho"
@@ -142,8 +207,11 @@
             </div>
           </div>
 
-          <div class="uk-width-1-1">
+          <div id="divProjects" class="uk-width-1-1">
             <hr class="uk-divider-icon" />
+            <h2 class="uk-text-center">
+              Meus Projetos
+            </h2>
             <span id="projects"></span>
           </div>
         </div>
@@ -152,9 +220,48 @@
       <nav class="uk-navbar" uk-navbar>
         <div class="uk-navbar-center">
           <ul class="uk-navbar-nav uk-breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Programação</a></li>
-            <li><a href="#">Música</a></li>
+            <li><a href="#divAbout" uk-scroll>Sobre Mim</a></li>
+            <li><a href="#divHability" uk-scroll>Experiência</a></li>
+            <li><a href="#divProjects" uk-scroll>Projetos</a></li>
+            <li>
+              <a href="#modal-full" uk-toggle>Contato</a>
+
+              <div id="modal-full" class="uk-modal-full" uk-modal>
+                <div class="uk-modal-dialog">
+                  <button
+                    class="uk-modal-close-full uk-close-large"
+                    type="button"
+                    uk-close
+                  ></button>
+                  <div
+                    class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle modaldiv"
+                    uk-grid
+                  >
+                    <div
+                      class="uk-background-cover contactWallpaper"
+                      style="
+                        background-image: url('https://cdn.wallpapersafari.com/74/77/GOsm1H.gif');
+                      "
+                      uk-height-viewport
+                    ></div>
+                    <div class="uk-padding-large uk-background-muted">
+                      <h1>Entre em contato comigo</h1>
+                      <p class="">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -162,7 +269,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.11/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.17.0/core.min.js"></script>
     <script src="js/axios.js"></script>
-    <!-- <script src="js/animation.js"></script> -->
+    <script src="js/animation.js"></script>
   </body>
 </html>

@@ -1,8 +1,9 @@
 var once = true;
 
 document.addEventListener("DOMContentLoaded", function (event) {
+  console.log("Seja bem-vindo ao portfolio de Leonardo Conceição dos Santos.");
   gsap.set("#body", { overflow: "hidden" });
-  detectTime(".time")
+  detectTime("#time")
   if (history.scrollRestoration) {
     history.scrollRestoration = "manual";
   } else {
@@ -14,15 +15,28 @@ document.addEventListener("DOMContentLoaded", function (event) {
   let anim1 = document.getElementsByClassName("animate-left");
   let anim2 = document.getElementsByClassName("animate-right");
   let anim3 = document.getElementsByClassName("animate-fade");
+  let anim4 = document.getElementsByClassName("circle");
+  let anim5 = document.querySelectorAll(".circle img");
 
   removeAttr(anim1, "uk-scrollspy");
   removeAttr(anim2, "uk-scrollspy");
   removeAttr(anim3, "uk-scrollspy");
 
+  setAnimations(
+    anim4,
+    "uk-scrollspy",
+    "cls: uk-animation-slide-top; repeat: true"
+  );
+  setAnimations(
+    anim5,
+    "uk-scrollspy",
+    "cls: uk-animation-slide-bottom; delay: 500; repeat: true"
+  );
+
   // Controle de ativar atributos de animação após animação pora não interromper GSAP
   document.getElementById("body").addEventListener("scroll", function (event) {
     var scroll = this.scrollTop;
-    if (scroll >= 570) {
+    if (scroll >= 750) {
       activeAnimationOnce();
     }
   });
@@ -59,8 +73,29 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   tl4
     .to(".photo", { x: 150, duration: 1.5, ease: Circ.easeOut })
-    .to(".photo", { x: 0, duration: 2.5, ease: Circ.easeOut });
+    .to(".photo", { x: 0, duration: 2.5, ease: Circ.easeOut, onComplete:letter });
+
+
+  });
+
+async function letter(){
+
+  var typewriter = new Typewriter(div, {
+    loop: true
 });
+
+  let div = document.getElementById("container-intro")
+  typewriter.typeString('Hello World!')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Strings can be removed')
+    .pauseFor(2500)
+    .deleteChars(7)
+    .typeString('<strong>altered!</strong>')
+    .pauseFor(2500)
+    .start();
+
+}
 
 function setAnimations(classname, attr, cls) {
   for (i = 0; i < classname.length; i++) {
@@ -96,7 +131,6 @@ function activeAnimationOnce() {
       "uk-scrollspy",
       "cls: uk-animation-fade; repeat: true"
     );
-    console.log("Seja bem-vindo ao portfolio de Leonardo Conceição dos Santos.");
   }
   once = false;
 }

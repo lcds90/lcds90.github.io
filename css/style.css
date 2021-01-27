@@ -24,7 +24,7 @@ h6 {
   overflow: scroll;
   width: 90vw;
   border: 5px double rgba(0, 0, 0, 0.5);
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.25));
   scrollbar-color: grey transparent;
   scrollbar-width: none;
@@ -44,7 +44,33 @@ h6 {
   text-align: center;
   font-family: "Lato", sans-serif;
   color: rgb(220, 220, 220);
-  background: rgba(140, 140, 140);
+  background: rgb(100, 100, 110);
+  outline: 5px double white;
+}
+
+.uk-navbar-nav li a:hover, .uk-navbar-nav li:last-child a:hover {
+  color: rgb(20, 20, 20);
+  background: rgb(200, 200, 210);
+  outline: 5px double black;
+}
+
+.uk-navbar-nav li a:focus, .uk-navbar-nav li:last-child a:focus {
+  color: rgb(220, 220, 220);
+  background: rgb(100, 40, 40);
+  outline: 5px double black;
+}
+
+.uk-navbar-nav li a:out-of-range, .uk-navbar-nav li:last-child a:out-of-range {
+  color: rgb(220, 220, 220);
+  background: rgb(100, 140, 40);
+  outline: 5px double black;
+}
+
+.uk-navbar-nav li:last-child a {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: rgb(220, 220, 220);
+  background: rgb(40, 40, 40);
   outline: 5px double white;
 }
 
@@ -85,26 +111,143 @@ h6 {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  text-align: center;
   font-size: 15px;
   padding: 15px;
   display: flex;
   height: 100px;
   width: 100px;
   color: #fff;
+  z-index:1;
+  position:relative;
 }
 
 .circle img {
   width: auto;
-  max-width: 110%;
+  max-width: 100%;
   height: auto;
-  max-height: 110%;
+  max-height: 100%;
   object-fit: contain
+}
+
+.reduce {
+  width:80% !important;
+  height:80% !important;
+}
+
+
+.circle .tooltiptext-top {
+  visibility: hidden;
+  width: 350px;
+  min-height:55px;
+  max-height: 56px;
+  background-color: #555;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  line-height: 15px;
+  z-index: 1;
+  bottom: 110%;
+  right: -120%;
+  font-size:0.7rem;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.circle .tooltiptext-top::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+.circle .tooltiptext-bottom {
+  visibility: hidden;
+  width: 350px;
+  min-height:55px;
+  max-height: 56px;
+  background-color: #555;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  line-height: 15px;
+  z-index: 1;
+  top: 110%;
+  right: -120%;
+  font-size:0.8rem;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.circle .tooltiptext-bottom::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:  transparent transparent #555 transparent;
+}
+
+.circle:hover .tooltiptext-top, .circle:hover .tooltiptext-bottom {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-title {
+  text-align:center;
+  color:gold;
+  margin-left:120px;
+}
+
+.tooltip-small::before {
+  content: " / ";
+  font-size:0.7rem;
+  font-weight:900;
+  color:rgb(20, 20, 20);
+}
+
+.tooltip-small {
+  font-size:0.7rem;
+  font-style: italic;
+  color:rgb(220, 220, 220);
 }
 
 .formacao {
   outline:5px double black;
   background: linear-gradient(white, whitesmoke)
+}
+
+.contactWallpaper {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  background-position: 200% 50%;
+  background-size: 50vw 100vh;
+}
+
+.modaldiv {
+  background-color:#080808;
+}
+
+#gif {
+  width: auto;
+  min-width: 95%;
+  height: auto;
+  min-height: 95%;
+  position:relative;
+  left:100px;
+  bottom: 100px;
+  object-fit: contain
 }
 
 /*###Desktops, big landscape tablets and laptops(Large, Extra large)####*/
