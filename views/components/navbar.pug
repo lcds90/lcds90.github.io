@@ -1,0 +1,30 @@
+nav.uk-navbar(uk-navbar='')
+    .uk-navbar-center
+      ul.uk-navbar-nav.uk-breadcrumb
+        li
+          a(href='#divAbout', uk-scroll='') Sobre Mim
+        li
+          a(href='#divHability', uk-scroll='') Experi&ecirc;ncia
+        li
+          a(href='#divProjects', uk-scroll='') Projetos
+        li
+          a(href='#modal-full', uk-toggle='') Contato
+          #modal-full.uk-modal-full(uk-modal='')
+            .uk-modal-dialog
+              button.uk-modal-close-full.uk-close-large(type='button', uk-close='')
+              .uk-grid-collapse.uk-flex-middle.modaldiv(class='uk-child-width-1-2@s', uk-grid='')
+                .uk-background-cover.contactWallpaper(style="\
+                background-image: url('https://cdn.wallpapersafari.com/74/77/GOsm1H.gif');\
+                ", uk-height-viewport='')
+                .uk-padding-large.uk-background-muted
+                  h1 Entre em contato comigo
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    | sed do eiusmod tempor incididunt ut labore et dolore
+                    | magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    | exercitation ullamco laboris nisi ut aliquip ex ea
+                    | commodo consequat. Duis aute irure dolor in
+                    | reprehenderit in voluptate velit esse cillum dolore eu
+                    | fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    | non proident, sunt in culpa qui officia deserunt mollit
+                    | anim id est laborum.

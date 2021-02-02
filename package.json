@@ -1,0 +1,27 @@
+{
+  "name": "lcds90.github.io",
+  "version": "1.0.0",
+  "description": "portfolio, integrando com pug",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --ext js,pug,css --ignore public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcds90/lcds90.github.io.git"
+  },
+  "author": "LCDS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lcds90/lcds90.github.io/issues"
+  },
+  "homepage": "https://github.com/lcds90/lcds90.github.io#readme",
+  "dependencies": {
+    "connect-livereload": "^0.6.1",
+    "css.escape": "^1.5.1",
+    "express": "^4.17.1",
+    "livereload": "^0.9.1",
+    "pug": "^3.0.0"
+  }
+}
