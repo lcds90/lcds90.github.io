@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Raleway:ital,wght@0,100;0,200;0,400;1,100;1,400&display=swap");
+html,
+body {
+  background-color: rgba(140, 140, 140);
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+#body {
+  margin-top: 1vw;
+  margin-bottom: 5vw;
+  position: fixed;
+  height: 90%;
+  overflow: scroll;
+  width: 90vw;
+  border: 5px double rgba(0, 0, 0, 0.5);
+  background-color: #f5f5f5;
+  filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.25));
+}
+
+html {
+  scrollbar-color: grey transparent;
+  scrollbar-width: none;
+  pointer-events: painted;
+}
+
+#divAbout {
+  overflow-x:hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+ }
+ ::-webkit-scrollbar-thumb {
+  background: #e3e3e3;
+  border-radius: 15px;
+ }
+ ::-webkit-scrollbar-thumb:hover{
+  background: #A8A6A8;
+ }
+ ::-webkit-scrollbar-track{
+  background: #292929;
+  border-radius: 13px;
+  box-shadow: inset 8px 10px 12px #636363;
+ }
+
+#body div {
+  padding: 5%;
+}
+
+.uk-navbar {
+  width: 88.5%;
+  position: fixed;
+  bottom: 2.5vh;
+}
+
+.uk-navbar-nav {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  filter: drop-shadow(0px 0px 25px rgba(255, 255, 255, 0.6));
+}
+
+.uk-navbar-nav li a {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: rgb(220, 220, 220);
+  background: rgb(100, 100, 110);
+  outline: 5px double white;
+}
+
+.uk-navbar-nav li a:hover,
+.uk-navbar-nav li:last-child a:hover {
+  color: rgb(20, 20, 20);
+  background: rgb(200, 200, 210);
+  outline: 5px double black;
+}
+
+.uk-navbar-nav li a:focus,
+.uk-navbar-nav li:last-child a:focus {
+  color: rgb(220, 220, 220);
+  background: rgb(100, 40, 40);
+  outline: 5px double black;
+}
+
+.uk-navbar-nav li a:out-of-range,
+.uk-navbar-nav li:last-child a:out-of-range {
+  color: rgb(220, 220, 220);
+  background: rgb(100, 140, 40);
+  outline: 5px double black;
+}
+
+.uk-navbar-nav li:last-child a {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: rgb(220, 220, 220);
+  background: rgb(40, 40, 40);
+  outline: 5px double white;
+}
+
+.photo {
+  position: absolute;
+  width: 45%;
+  height: 45%;
+  object-fit: contain;
+  left: 2vw;
+  top: 25px;
+  z-index: 40;
+}
+
+.text p {
+  margin-bottom: -20px;
+  margin-left: 20px;
+  font-size: 1.3rem;
+}
+
+.line {
+  z-index: 50;
+  overflow: visible;
+  position: absolute;
+  width: 15%;
+  height: 30%;
+  left: 147px;
+  top: -5px;
+  border-bottom: black 5px double;
+  white-space: "-moz-pre-wrap";
+}
+
+.circle {
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+  background-color: rgba(120, 120, 120, 0.05);
+  border: 10px double grey;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 15px;
+  padding: 15px;
+  display: flex;
+  height: 90px;
+  width: 90px;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+}
+
+.circle img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.reduce {
+  width: 80% !important;
+  height: 80% !important;
+}
+
+.circle .tooltiptext-top {
+  visibility: hidden;
+  width: 350px;
+  min-height: 55px;
+  max-height: 56px;
+  background-color: #555;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  line-height: 15px;
+  z-index: 1;
+  bottom: 110%;
+  right: -120%;
+  font-size: 0.7rem;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.circle .tooltiptext-top::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+.circle .tooltiptext-bottom {
+  visibility: hidden;
+  width: 350px;
+  min-height: 55px;
+  max-height: 56px;
+  background-color: #555;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  line-height: 15px;
+  z-index: 1;
+  top: 110%;
+  right: -120%;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.circle .tooltiptext-bottom::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%; /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+.circle:hover .tooltiptext-top,
+.circle:hover .tooltiptext-bottom {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-title {
+  text-align: center;
+  color: gold;
+  margin-left: 120px;
+}
+
+.tooltip-small::before {
+  content: " / ";
+  font-size: 0.7rem;
+  font-weight: 900;
+  color: rgb(20, 20, 20);
+}
+
+.tooltip-small {
+  font-size: 0.7rem;
+  font-style: italic;
+  color: rgb(220, 220, 220);
+}
+
+.formacao {
+  outline: 5px double black;
+  background: linear-gradient(white, whitesmoke);
+}
+
+.contactWallpaper {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  background-position: 200% 50%;
+  background-size: 50vw 100vh;
+}
+
+.modaldiv {
+  background-color: #080808;
+}
+
+#gif {
+  width: auto;
+  min-width: 95%;
+  height: auto;
+  min-height: 95%;
+  position: relative;
+  left: 100px;
+  bottom: 100px;
+  object-fit: contain;
+}
+
+.intro {
+  position: fixed;
+  top:-15px;
+  font-size:1.5rem;
+}
+
+.intro > span {
+  position:relative;
+  font-size:1.5rem;
+  font-weight:600;
+  transition: all .5s ease-in-out;
+  color:darkgrey;
+  letter-spacing:10px;
+}
+
+.intro span:hover {
+  top:0px;
+  transition: all .5s ease-in-out;
+  font-size: 3.5rem;
+  color:grey;
+}
+
+#container-intro {
+  position:relative;
+  width:350px !important;
+  height:5px !important;
+  padding:30px 0px !important;
+  left:10px;
+  top:20px;
+  text-align:center;
+  line-height: 5px;
+
+}
+
+#time {
+  position:relative;
+  bottom:60px;
+  right:100px;
+  letter-spacing:2px;
+  font-weight:900;
+  text-underline-position: below;
+}
+
+@media screen and (min-width: 800px) and (max-width:1024px) {
+  .circle {
+    transform:scale(.6) !important;
+  }
+  
+  .photo {
+    z-index:-1;
+    top:-13vw;
+    left:3vw;
+    transform:scale(.6);
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width:799px) {
+  .circle {
+    transform:scale(.6) !important;
+  }
+  
+  .photo {
+    z-index:-1;
+    top:-13vw;
+    left:3vw;
+    transform:scale(.6);
+  }
+
+  #time {
+    left:-3vw;
+  }
+
+  .intro {
+    left:-7vw;
+  }
+
+  #container-intro {
+    left:-8vw; 
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .uk-navbar {
+    width: 88.5%;
+    position: fixed;
+    bottom: 15vh;
+  }
+
+  .photo {
+    z-index:-1;
+    top:-3rem;
+    left:5vw;
+  }
+
+  #container-intro {
+    z-index:10;
+    left:-2rem;
+    transform:scale(.7);
+    margin:0;
+  }
+
+  .intro {
+    left:10.5rem;
+    top:-4.5rem;
+  }
+
+  .intro > span {
+    font-size:1.25rem;
+    letter-spacing: 5px;
+  }
+
+  #time {
+    left:5rem;
+    top:-6rem;
+    right:0;
+  }
+
+  .circle {
+    transform:scale(.8) !important;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  
+  .intro {
+    left:9rem;
+    top:-4.5rem;
+  }
+
+  .intro > span {
+    font-size:1.25rem;
+    letter-spacing: 5px;
+  }
+
+    
+  .formacao {
+    outline: none;
+    background:none;
+  }
+
+}
+
+@media screen and (max-width: 280px) {
+  
+  .intro {
+    left:8rem;
+    top:-2rem;
+  }
+
+  #time {
+    left:4.5rem;
+    top:-4rem;
+  }
+
+  .intro > span {
+    font-size:1rem;
+    letter-spacing: 5px;
+  }
+
+  #container-intro {
+    left:-4rem;
+  }
+
+  .formacao {
+    outline: none;
+    background:none;
+  }
+
+}
