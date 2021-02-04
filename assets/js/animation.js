@@ -148,7 +148,7 @@ function detectTime(divname){
     greeting = "Bom dia, eu sou";
   } else if(d.getHours() >= 13 && d.getHours() <= 18){
     greeting = "Boa tarde, eu sou";
-  } else if (d.getHours() >= 19 && d.getHours == 23){
+  } else if (d.getHours() >= 19 && d.getHours <= 23){
     greeting = "Boa noite, eu sou";
   } else {
     greeting = "Olá, eu sou";

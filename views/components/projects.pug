@@ -1,5 +1,19 @@
 #divProjects.uk-width-1-1
-        hr.uk-divider-icon
-        h2.uk-text-center
-          | Meus Projetos
-        span#projects
+  hr.uk-divider-icon
+  h2.uk-text-center
+    | Meus Projetos
+  .uk-position-relative.uk-light(tabindex='-1', uk-slideshow='animation: pull')
+    ul.uk-slideshow-items
+      li
+        div.uk-flex.uk-flex-center
+          img(src='img/art.gif', alt='')
+      li
+        div.uk-flex.uk-flex-center
+          img(src='img/unifcv.png', alt='')
+      li
+        div.uk-flex.uk-flex-center
+          img(src='img/uninove.png', alt='')
+    a.uk-position-center-left.uk-position-small.uk-background-secondary(href='#', uk-slidenav-previous='', uk-slideshow-item='previous')
+    a.uk-position-center-right.uk-position-small.uk-background-secondary(href='#', uk-slidenav-next='', uk-slideshow-item='next')
+
+  span#projects

@@ -1,28 +1,46 @@
-#divAbout.texts.uk-width-1-1.uk-margin-remove.uk-padding-remove-bottom
-        hr.uk-divider-icon
-        .uk-padding-remove-bottom.uk-padding(uk-grid='')
-          .uk-width-1-1.animate-fade.uk-padding-remove
-            h2.uk-heading-bullet Sobre mim
-          div(class="animate-right uk-width-1-1 uk-width-1-2@s uk-padding-small uk-padding-remove@s")
-            q
-              | Desde cedo sempre fui apaixonado por tecnologia e m&uacute;sica, e
-              | explorar-la s&oacute; me fez cada vez mais estudar sobre o assunto
-            hr
-            p.uk-text-small
-              | Atrav&eacute;s da influ&ecirc;ncia que tive desde cedo atrav&eacute;s de jogos,
-              | acabei me interessando por quest&otilde;es sobre o desenvolvimento de
-              | tecnologias e inclusive at&eacute; estudos sobre produ&ccedil;&atilde;o musical.
-              br
-              |                   Seguindo dessa ambi&ccedil;&atilde;o que obtive e reflex&atilde;o sobre os avan&ccedil;os
-              |                   da tecnologia com o tempo, busquei determina&ccedil;&atilde;o para
-              |                   prosseguir e seguir minha forma&ccedil;&atilde;o voltado para a &aacute;rea do
-              |                   desenvolvimento.
-              br
-              b Bolsista do ProUni
-              |  realizei tecnol&oacute;go especializado em
-              |                   sistemas para internet e atualmente estou evoluindo meus
-              |                   conhecimentos voltado ao desenvolvimento sobre a an&aacute;lise e o
-              |                   desenvolvimento de sistemas.
-              br
-          div(class="uk-visible@s animate-left uk-padding uk-width-1-2 uk-padding-remove")
-            img#gif(src='img/art.gif', alt='')
+#divAbout(class="texts uk-width-1-1 uk-margin-remove@s uk-padding-small uk-padding-remove-bottom@s")
+  hr.uk-divider-icon
+  .uk-padding-small(,uk-grid='')
+    .uk-width-1-1.animate-fade.uk-padding-remove
+      h2.uk-heading-bullet Sobre mim
+    div(class="animate-right uk-width-1-1 uk-width-1-2@s uk-padding-small uk-padding-remove@s")
+      q
+        | Desde cedo sempre fui apaixonado por tecnologia e m&uacute;sica, e
+        | explorar-la s&oacute; me fez cada vez mais estudar sobre o assunto
+      hr
+      p.uk-text-small
+        | Atrav&eacute;s da influ&ecirc;ncia que tive desde cedo atrav&eacute;s de jogos,
+        | acabei me interessando por quest&otilde;es sobre o desenvolvimento de
+        | tecnologias e inclusive at&eacute; estudos sobre produ&ccedil;&atilde;o musical.
+        br
+        |                   Seguindo dessa ambi&ccedil;&atilde;o que obtive e reflex&atilde;o sobre os avan&ccedil;os
+        |                   da tecnologia com o tempo, busquei determina&ccedil;&atilde;o para
+        |                   prosseguir e seguir minha forma&ccedil;&atilde;o voltado para a &aacute;rea do
+        |                   desenvolvimento.
+        br
+        b Bolsista do ProUni
+        |  realizei tecnol&oacute;go especializado em
+        |                   sistemas para internet e atualmente estou evoluindo meus
+        |                   conhecimentos voltado ao desenvolvimento sobre a an&aacute;lise e o
+        |                   desenvolvimento de sistemas.
+        br
+    div(class="uk-visible@s animate-left uk-padding uk-width-1-2")
+      img#gif(src='img/art.gif', alt='')
+    div.uk-position-relative.uk-width-1-1.uk-padding-small.uk-margin-small(style="margin-left: 50px")
+      div#links.uk-padding-small.uk-margin-small.uk-animation-fade.uk-grid
+        div(class="uk-width-1-1 uk-width-1-2@s uk-flex uk-flex-right")
+          button.uk-button.uk-button-secondary.uk-margin(type='button', uk-toggle='target: #modal-example') Experiência Profissional
+          #modal-example(uk-modal='')
+            .uk-modal-dialog.uk-modal-body
+              h2.uk-modal-title Headline
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              p.uk-text-right
+                button.uk-button.uk-button-secondary.uk-modal-close(type='button') Voltar
+        div(class="uk-width-1-1 uk-width-1-2@s uk-flex uk-flex-center")
+          .circle-links
+            a
+              img.uk-responsive-width.uk-responsive-height(src='img/github.png', alt='')
+          .circle-links
+            a
+              img.uk-responsive-width.uk-responsive-height(src='img/linkedin.png', alt='')

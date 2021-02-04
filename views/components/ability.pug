@@ -1,73 +1,100 @@
 .texts.uk-width-1-1.uk-margin-remove(uk-grid='')
-        div#divHability(class="uk-width-1-1 uk-width-1-2@s uk-padding-small")
-          div(class="uk-card uk-padding-remove@s uk-margin-remove@s uk-padding-small")
-            h2.uk-heading-line.uk-text-center
-              span Habilidades
-            div#habilidades(class ="uk-card-body uk-child-width-1-2 uk-child-width-1-3@s", uk-grid='')
-              div
-                .circle
-                  span.tooltiptext-bottom
-                    span.tooltip-title Desenvolvimento Web
-                    br
-                    |                         HTML5 
-                    br
-                    |                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS
-                    span.tooltip-small Bootstrap, Bulma, Tailwind CSS e UIKit
-                    br
-                    |                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JS
-                    span.tooltip-small Axios, AJAX, GASP, JQuery
-                    br
-                  img(src='img/html-css-js.png', alt='')
-              div
-                .circle
-                  span.tooltiptext-bottom
-                    | Tooltip text
-                    br
-                    | teste
-                  img.uk-responsive-width.uk-responsive-height(src='img/php.png', alt='')
-              div
-                .circle
-                  span.tooltiptext-bottom
-                    | Tooltip text
-                    br
-                    | teste
-                  img.uk-responsive-width.uk-responsive-height(src='img/java.png', alt='')
-              div
-                .circle
-                  span.tooltiptext-top  
-                  img.uk-responsive-width.uk-responsive-height(src='img/node.png', alt='')
-              div
-                .circle
-                  span.tooltiptext-top
-                    | Tooltip text
-                    br
-                    | teste
-                  img.reduce(src='img/vue.png', alt='')
-              div
-                .circle
-                  span.tooltiptext-top
-                    | Tooltip text
-                    br
-                    | teste
-                  img.reduce(src='img/mysql.png', alt='')
-        div(class="uk-width-1-1 uk-width-1-2@s uk-padding-small formacao")
-          div(class=" uk-card uk-padding-small uk-margin-small uk-padding-remove@l uk-margin-remove@l")
-            h2.uk-heading-line.uk-text-center
-              span Forma&ccedil;&atilde;o
-            .uk-card-body.uk-child-width-1-2.uk-padding-remove(uk-grid='')
-              div
-                .circle
-                  img.uk-responsive-width.uk-responsive-height(src='img/unifcv.png', alt='Logo UNIFCV - Centro Universitário Cidade Verde')
-              div
-                p
-                  | Analise e Desenvolvimento em Sistemas
-                small
-                  | 2021 - 2023
-              div
-                .circle
-                  img#uninove.uk-responsive-width.uk-responsive-height(src='img/uninove.png', alt='Logo UNINOVE - Universidade Nove de Julho')
-              div
-                p
-                  | Tecnologia em Sistemas para Internet
-                small
-                  | 2018 - 2020
+  div#divHability(class="uk-width-1-1 uk-width-1-2@s uk-padding-small")
+    div(class="uk-card uk-padding-remove@s uk-margin-remove@s uk-padding-small")
+      h2.uk-heading-line.uk-text-center
+        span Habilidades
+      div#habilidades(class ="uk-card-body uk-child-width-1-2 uk-child-width-1-3@s", uk-grid='')
+        div
+          .circle
+            span(class="tooltiptext-bottom uk-visible@s")
+              span.tooltip-title Desenvolvimento Web
+              br
+              |                         HTML5
+              span.tooltip-small SEO Básico
+              br
+              |                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS
+              span.tooltip-small Bootstrap, Bulma, Tailwind CSS e UIKit
+              br
+              |                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JS
+              span.tooltip-small Axios, AJAX, GASP, JQuery
+              br
+            img(src='img/html-css-js.png', alt='')
+        div
+          .circle
+            span(class="tooltiptext-bottom uk-visible@s")
+              span.tooltip-title Desenvolvimento Back-End
+              br
+              | Composer, Programação POO, MVC e Middleware
+              br
+              span.tooltip-small Certificado 
+                a.uk-text-muted(href="http://tiny.cc/CursoPHPLeonardoSantos", target="_blank") Programação PHP 
+            img.uk-responsive-width.uk-responsive-height(src='img/php.png', alt='')
+        div
+          .circle
+            span(class="tooltiptext-bottom uk-visible@s")
+              span.tooltip-title Desenvolvimento Web e Mobile
+              br
+              | Java Servlets, JSP e Programação POO
+              br
+              | Desenvolvimento Básico para Android
+            a(class="uk-hidden@s uk-display-inline-block",href='#modal-center', uk-toggle='')
+              img(src='img/java.png', alt='')
+              #modal-center.uk-flex-top(uk-modal='')
+                .uk-modal-dialog.uk-modal-body.uk-margin-auto-vertical
+                  button.uk-modal-close-default(type='button', uk-close='')
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+            img(class="uk-responsive-width uk-responsive-height uk-visible@s",src='img/java.png', alt='')
+        div
+          .circle
+            span(class="tooltiptext-top uk-visible@s")  
+              span.tooltip-title Desenvolvimento API Rest e RestFul / Web
+              br
+              | Programação POO, JWT (Json Web Tokens) 
+              br
+              | Gulp, NPM e NPX
+              br
+              | EJS, Pug 
+              br 
+              | Knex, Sequelize e MongoDB
+            img.uk-responsive-width.uk-responsive-height(src='img/node.png', alt='')
+        div
+          .circle
+            span(class="tooltiptext-top uk-visible@s")  
+              span.tooltip-title Framework Front-End
+              br
+              | Conhecimentos sobre padrões de projetos de Vue e Vue Router
+            img.reduce(src='img/vue.png', alt='')
+        div
+          .circle
+            span(class="tooltiptext-top uk-visible@s")
+              span.tooltip-title SGBD
+              br
+              | Modelagem de Dados Básica
+              br
+              | Stored Procedures
+            img.reduce(src='img/mysql.png', alt='')
+  div(class="uk-width-1-1 uk-width-1-2@s uk-padding-small formacao")
+    div(class=" uk-card uk-padding-small uk-margin-small uk-padding-remove@l uk-margin-remove@l")
+      h2.uk-heading-line.uk-text-center
+        span Forma&ccedil;&atilde;o
+      .uk-card-body.uk-child-width-1-2.uk-padding-remove(uk-grid='')
+        div
+          .circle
+            img.uk-responsive-width.uk-responsive-height(src='img/unifcv.png', alt='Logo UNIFCV - Centro Universitário Cidade Verde')
+        div
+          p
+            | Analise e Desenvolvimento em Sistemas
+          small
+            | 2021 - 2023&nbsp;&nbsp;&nbsp;
+            b Cursando
+        div
+          .circle
+            img#uninove.uk-responsive-width.uk-responsive-height(src='img/uninove.png', alt='Logo UNINOVE - Universidade Nove de Julho')
+        div
+          p
+            | Tecnologia em Sistemas para Internet
+          small
+            | 2018 - 2020&nbsp;&nbsp;&nbsp;
+            b Completo
