@@ -1,34 +1,37 @@
 nav.uk-navbar(uk-navbar='')
-    .uk-navbar-center
-      ul.uk-navbar-nav.uk-breadcrumb
-        li.uk-background-secondary
-          a#top(href="#top", uk-scroll='', uk-icon="chevron-up")
-        li
-          a(href='#divAbout', uk-scroll='') Sobre Mim
-        li
-          a(href='#divHability', uk-scroll='') Experi&ecirc;ncia
-        li
-          a(href='#divProjects', uk-scroll='') Projetos
-        li
-          a(href='#modal-full', uk-toggle='') Contato
-          #modal-full.uk-modal-full(uk-modal='')
-            .uk-modal-dialog
-              button.uk-modal-close-full.uk-close-large(type='button', uk-close='')
-              .uk-grid-collapse.uk-flex-middle.modaldiv(class='uk-child-width-1-2@s', uk-grid='')
-                .uk-background-cover.contactWallpaper(style="\
-                background-image: url('https://cdn.wallpapersafari.com/74/77/GOsm1H.gif');\
-                ", uk-height-viewport='')
-                .uk-padding-small.uk-background-muted
-                  h1.uk-text-center Entre em contato comigo
-                  div.uk-flex.uk-flex-center
-                    form.uk-form-horizontal.uk-margin-large
-                      .uk-margin
-                          input#form-horizontal-text.uk-input(type='text', placeholder='Seu e-mail')
-                      .uk-margin
-                        textarea.uk-textarea(placeholder="Digite sua mensagem", cols="2")
-                      .uk-margin-remove.uk-text-center
-                        a(href="#", uk-icon="icon:  github-alt; ratio: 1").uk-padding
-                        a(href="#", uk-icon="icon: linkedin; ratio: 1").uk-padding
-                        a(href="#", uk-icon="icon: whatsapp; ratio: 1").uk-padding
-                      .uk-margin.uk-text-center
-                        a(href="#", uk-icon="icon: check; ratio: 1").uk-margin.uk-button.uk-width-1-1.uk-button-danger
+  .uk-navbar-center
+    ul.uk-navbar-nav.uk-breadcrumb
+      li.uk-background-secondary
+        a#top(href="#top", uk-scroll='', uk-icon="chevron-up")
+      li
+        a(href='#divAbout', uk-scroll='') Sobre Mim
+      li
+        a(href='#divHability', uk-scroll='') Experi&ecirc;ncia
+      li
+        a(href='#divProjects', uk-scroll='') Projetos
+      li
+        a(href='#modal-full', uk-toggle='') Contato
+        #modal-full.uk-modal-full(uk-modal='')
+          .uk-modal-dialog
+            button.uk-modal-close-full.uk-close-large(type='button', uk-close='')
+            .uk-grid-collapse.uk-flex-middle.modaldiv(class='uk-child-width-1-2@s', uk-grid='')
+              .uk-background-cover.contactWallpaper(style="\
+              background-image: url('https://cdn.wallpapersafari.com/74/77/GOsm1H.gif');\
+              ", uk-height-viewport='')
+              .uk-padding-small.uk-background-muted
+                h1.uk-text-center Entre em contato comigo
+                div.uk-flex.uk-flex-center
+                  form.uk-form-horizontal.uk-margin-large
+                    .uk-margin
+                      input#name.uk-input(type='text', name="name", placeholder='Nome')
+                    .uk-margin 
+                      input#email.uk-input(type='text', name="email", placeholder='E-mail')
+
+                    .uk-margin
+                      textarea#msg.uk-textarea(name="msg", placeholder="Digite sua mensagem", cols="2")
+                    .uk-margin-remove.uk-text-center
+                      a(href="#", uk-icon="icon:  github-alt; ratio: 1").uk-padding
+                      a(href="#", uk-icon="icon: linkedin; ratio: 1").uk-padding
+                      a(href="#", uk-icon="icon: whatsapp; ratio: 1").uk-padding
+                    .uk-margin.uk-text-center
+                      a#sendMail(href="#", uk-icon="icon: check; ratio: 1").uk-margin.uk-button.uk-width-1-1.uk-button-danger
