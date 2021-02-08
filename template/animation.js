@@ -3,7 +3,7 @@ var once = true;
 document.addEventListener("DOMContentLoaded", function (event) {
   console.log("Seja bem-vindo ao portfolio de Leonardo Conceição dos Santos.");
   gsap.set("#body", { overflow: "hidden" });
-  detectTime("#time")
+  detectTime("#time");
   if (history.scrollRestoration) {
     history.scrollRestoration = "manual";
   } else {
@@ -13,22 +13,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
   let divName = document.querySelectorAll(".intro");
-      let name = "Leonardo Santos"
-      name = name.split("")
+  let name = "Leonardo Santos";
+  name = name.split("");
 
-      for(i = 0; i < name.length; i++){
-        name[i] = `<span class="sl${i+1}">${name[i]}</span>`
-      }
-      // console.log(name);
-      name = name.join('');
-      // console.log(name)
+  for (i = 0; i < name.length; i++) {
+    name[i] = `<span class="sl${i + 1}">${name[i]}</span>`;
+  }
+  // console.log(name);
+  name = name.join("");
+  // console.log(name)
 
-      for(let e=0; e<divName.length; e++) {
-        divName[e].innerHTML = name;
-      }
-
-      
-
+  for (let e = 0; e < divName.length; e++) {
+    divName[e].innerHTML = name;
+  }
 
   let anim1 = document.getElementsByClassName("animate-left");
   let anim2 = document.getElementsByClassName("animate-right");
@@ -40,10 +37,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
   removeAttr(anim2, "uk-scrollspy");
   removeAttr(anim3, "uk-scrollspy");
 
-
-
-  setTimeout(function(){
-    letter("#container-intro", "Desenvolvimento Front-End", "Back-End", "Em constante evolução ao fullstack! :)")
+  setTimeout(function () {
+    letter(
+      "#container-intro",
+      "Desenvolvimento Front-End",
+      "Back-End",
+      "Em constante evolução ao fullstack! :)"
+    );
     setAnimations(
       anim4,
       "uk-scrollspy",
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       "uk-scrollspy",
       "cls: uk-animation-slide-bottom; delay: 500; repeat: true"
     );
-  }, 5000)
+  }, 5000);
 
   // Controle de ativar atributos de animação após animação pora não interromper GSAP
   document.getElementById("body").addEventListener("scroll", function (event) {
@@ -62,9 +62,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     if (scroll >= 750) {
       activeAnimationOnce();
     }
-
   });
-
 
   var tl = gsap.timeline();
   var tl2 = gsap.timeline();
@@ -92,15 +90,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
     .to(".line", { opacity: 0, x: 300, duration: 1 })
     .to(".line", { opacity: 1, x: -10, width: "100%", duration: 2 })
     .to(".line", { opacity: 1, y: 1000, duration: 2 })
-    .to(".line", { display: "none", duration: .5 })
-    .set("#body", { overflow: "auto", duration: .5 });
+    .to(".line", { display: "none", duration: 0.5 })
+    .set("#body", { overflow: "auto", duration: 0.5 });
 
   tl4
     .to(".photo", { x: 150, duration: 2, ease: Circ.easeOut })
     .to(".photo", { x: 0, duration: 2, ease: Circ.easeOut });
-
-
-  });
+});
 
 function setAnimations(classname, attr, cls) {
   for (i = 0; i < classname.length; i++) {
@@ -140,31 +136,30 @@ function activeAnimationOnce() {
   once = false;
 }
 
-function detectTime(divname){
+function detectTime(divname) {
   let greeting;
   let d = new Date();
-  let div = document.querySelectorAll(divname)
-  if(d.getHours() >= 6 && d.getHours() <= 12){
+  let div = document.querySelectorAll(divname);
+  if (d.getHours() >= 6 && d.getHours() <= 12) {
     greeting = "Bom dia, eu sou";
-  } else if(d.getHours() >= 13 && d.getHours() <= 18){
+  } else if (d.getHours() >= 13 && d.getHours() <= 18) {
     greeting = "Boa tarde, eu sou";
-  } else if (d.getHours() >= 19 && d.getHours <= 23){
+  } else if (d.getHours() >= 19 && d.getHours <= 23) {
     greeting = "Boa noite, eu sou";
   } else {
     greeting = "Olá, eu sou";
   }
 
-  for(let e=0; e<div.length; e++) {
+  for (let e = 0; e < div.length; e++) {
     div[e].innerHTML = greeting;
   }
-
 }
 
 function letter(div, str1, str2, str3) {
   var typewriter = new Typewriter(div, {
     loop: true,
   });
-  
+
   typewriter
     .typeString(str1)
     .pauseFor(4000)

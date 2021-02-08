@@ -1,27 +1,13 @@
-/* axios
-  .get("https://api.github.com/users/lcds90/repos")
-  .then((req) => {
-    // console.log(req.data);
-    let ul = document.createElement("ul");
-    for (let i = 0; i < req.data.length; i++) {
-      let li = document.createElement("li");
-      li.innerHTML = req.data[i].name;
-      ul.appendChild(li);
-    }
-    // console.log(ul);
-    document.querySelector("#projects").appendChild(ul);
-  })
-  .catch((err) => {
-    console.log(err);
-  }); */
+class RequestClass {
+  index(){
+    document.querySelector("#sendMail").addEventListener("click", sendMail);
+  }
 
-document.querySelector("#sendMail").addEventListener("click", sendMail);
-
-function sendMail() {
+sendMail() {
   let name = document.querySelector("#name").value;
   let email = document.querySelector("#email").value;
   let msg = document.querySelector("#msg").value;
-  let validate = validateFields(name, email, msg);
+  let validate = this.validateFields(name, email, msg);
 
   // console.log(`${name} + ${email} :\n ${msg}`);
   // console.log(validate);
@@ -51,7 +37,7 @@ function sendMail() {
   }
 }
 
-function validateFields(name, email, msg) {
+ validateFields(name, email, msg) {
   let isNameValid =
     name == undefined || name.length == 0 || name == " " ? false : true;
   let isEmailValid =
@@ -65,3 +51,23 @@ function validateFields(name, email, msg) {
     return false;
   }
 }
+
+} 
+
+/* axios
+  .get("https://api.github.com/users/lcds90/repos")
+  .then((req) => {
+    // console.log(req.data);
+    let ul = document.createElement("ul");
+    for (let i = 0; i < req.data.length; i++) {
+      let li = document.createElement("li");
+      li.innerHTML = req.data[i].name;
+      ul.appendChild(li);
+    }
+    // console.log(ul);
+    document.querySelector("#projects").appendChild(ul);
+  })
+  .catch((err) => {
+    console.log(err);
+  }); */
+
