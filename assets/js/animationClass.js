@@ -19,19 +19,11 @@ class AnimationClass {
       };
     }
   }
-<<<<<<< Updated upstream
-
-=======
 /* 
->>>>>>> Stashed changes
   nameComponent(divname, str) {
     let divName = document.querySelectorAll(divname);
     let string = str.split("");
 
-<<<<<<< Updated upstream
-    console.log(divName);
-=======
->>>>>>> Stashed changes
     for (let i = 0; i < string.length; i++) {
       string[i] = `<span class="sl${i + 1}">${string[i]}</span>`;
     }
@@ -42,11 +34,7 @@ class AnimationClass {
     for (let e = 0; e < divName.length; e++) {
       divName[e].innerHTML = string;
     }
-<<<<<<< Updated upstream
-  }
-=======
   } */
->>>>>>> Stashed changes
 
   detectTime(divname) {
     let greeting;

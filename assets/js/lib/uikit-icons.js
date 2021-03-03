@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-/*! UIkit 3.6.15 | https://www.getuikit.com | (c) 2014 - 2021 YOOtheme | MIT License */
-=======
 /*! UIkit 3.6.17 | https://www.getuikit.com | (c) 2014 - 2021 YOOtheme | MIT License */
->>>>>>> Stashed changes
 
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
