@@ -1,0 +1,55 @@
+#toggle-animation-php(hidden, uk-grid, class="uk-margin@m").uk-margin-remove.uk-padding-remove.uk-child-width-1-2.uk-text-center
+    .uk-background-secondary.uk-margin-small-top.uk-width-1-1
+        | Conhecimentos em: <br>
+        | Autenticação via Middleware 
+        | Gerenciador de pacote Composer <br>
+        | Programação Orientada a Objetos <br>
+        | Padrão de Projeto MVC <br>
+    div
+        img.uk-responsive-width.uk-responsive-height.reduce(src="img/php.png", alt="")
+    div.uk-flex.uk-flex-column(class="uk-margin@m")
+        a.uk-button.uk-button-default.uk-margin-bottom.uk-padding-remove(href='#modal-sections' uk-toggle='') Estudos
+        #modal-sections(uk-modal='')
+            .uk-modal-dialog
+                button.uk-modal-close-default(type='button' uk-close='')
+                .uk-modal-header
+                    h2.uk-modal-title Modal Title
+                .uk-modal-body
+                    p
+                        | Implementando...
+                .uk-modal-footer.uk-text-right
+                    button.uk-button.uk-button-default.uk-modal-close(type='button') Cancel
+                    button.uk-button.uk-button-primary(type='button') Save
+        a.uk-button.uk-button-default.uk-margin-bottom.uk-padding-remove(href='#modal-innout' uk-toggle='') InnOut
+        #modal-innout(uk-modal='')
+            .uk-modal-dialog
+                button.uk-modal-close-default(type='button' uk-close='')
+                .uk-modal-header
+                    h2.uk-modal-title Projeto de Simulação de Ponto
+                .uk-modal-body
+                    .uk-position-relative.uk-visible-toggle.uk-light(tabindex='-1' uk-slideshow='ratio: 7:3; animation: push')
+                        ul.uk-slideshow-items
+                            li
+                                img(src='img/php-screenshoot1.png' alt='' uk-cover='')
+                            li
+                                img(src='img/php-screenshoot2.png' alt='' uk-cover='')
+                        a.uk-position-center-left.uk-position-small.uk-hidden-hover(href='#' uk-slidenav-previous='' uk-slideshow-item='previous')
+                        a.uk-position-center-right.uk-position-small.uk-hidden-hover(href='#' uk-slidenav-next='' uk-slideshow-item='next')
+
+                    p
+                        | Projeto desenvolvido de simulação de ponto de entradas e saídas, desenvolvido em modelo POO <br>
+                        span.uk-text-small Relatórios e Lista de usuários a serem implementados
+                    hr
+                    div.uk-text-center.uk-background-secondary
+                        span.uk-padding-small Teste a aplicação
+                    div.uk-child-width-1-1(uk-grid="")
+                        div.uk-child-width-1-2.uk-flex.uk-text-center
+                            span.uk-label.uk-label-success.uk-text-center usuário
+                            span admin@lcds.com
+                        div.uk-child-width-1-2.uk-flex.uk-text-center
+                            span.uk-label.uk-label-warning.uk-text-center senha
+                            span a
+                .uk-modal-footer.uk-text-right.uk-child-width-1-1(class="uk-child-width-1-3@m")
+                    a.uk-button.uk-button-primary(href="http://innout.lcds.me/", target="_blank") Ver deploy
+                    a.uk-button.uk-button-default(href="https://github.com/lcds90/projeto-php-innout", target="_blank") Ver código
+                    a.uk-button.uk-button-danger.uk-modal-close(href='#') Fechar

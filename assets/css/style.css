@@ -33,7 +33,20 @@ html {
 }
 
 #divAbout {
+<<<<<<< Updated upstream
   overflow-x:hidden;
+=======
+  overflow:hidden
+}
+
+#about-divl {
+  background-color: #e3e3e3;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23dedede' stroke-width='8.4' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+border-radius:5%;
+-webkit-box-shadow: 0px 10px 1px -1px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 10px 1px -1px rgba(0,0,0,0.25);
+box-shadow: 0px 10px 1px -1px rgba(0,0,0,0.25);
+>>>>>>> Stashed changes
 }
 
 ::-webkit-scrollbar {
@@ -60,12 +73,19 @@ html {
 .uk-navbar {
   width: 88.5%;
   position: fixed;
+<<<<<<< Updated upstream
   bottom: 2.5vh;
 }
 
 .uk-navbar-nav {
   font-size: 1.2rem;
   letter-spacing: 2px;
+=======
+  bottom: 2vh;
+}
+
+.uk-navbar-nav {
+>>>>>>> Stashed changes
   filter: drop-shadow(0px 0px 25px rgba(255, 255, 255, 0.6));
 }
 
@@ -129,7 +149,11 @@ html {
   width: 15%;
   height: 30%;
   left: 147px;
+<<<<<<< Updated upstream
   top: -5px;
+=======
+  top: -10vh;
+>>>>>>> Stashed changes
   border-bottom: black 5px double;
   white-space: "-moz-pre-wrap";
 }
@@ -141,7 +165,11 @@ html {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
+<<<<<<< Updated upstream
   font-size: 15px;
+=======
+  /* font-size: 15px; */
+>>>>>>> Stashed changes
   padding: 15px;
   display: flex;
   height: 90px;
@@ -170,26 +198,44 @@ html {
   z-index: 1;
 }
 
+<<<<<<< Updated upstream
 .circle img {
+=======
+ .circle img, #sectionProjects img {
+>>>>>>> Stashed changes
   width: auto;
   max-width: 100%;
   height: auto;
   max-height: 100%;
   object-fit: contain;
+<<<<<<< Updated upstream
 }
 
 .circle-links a img {
+=======
+} 
+
+.circle-links a img, #sectionProjects img  {
+>>>>>>> Stashed changes
   width: auto;
   max-width: 80%;
   height: auto;
   max-height: 80%;
   object-fit: contain;
+<<<<<<< Updated upstream
 }
+=======
+} 
+>>>>>>> Stashed changes
 
 .reduce {
   width: 80% !important;
   height: 80% !important;
+<<<<<<< Updated upstream
 }
+=======
+} 
+>>>>>>> Stashed changes
 
 ul {
   list-style: none;
@@ -286,6 +332,7 @@ ul {
   object-fit: contain;
 }
 
+<<<<<<< Updated upstream
 .intro {
   position: fixed;
   top:-15px;
@@ -306,10 +353,23 @@ ul {
   transition: all .5s ease-in-out;
   font-size: 3.5rem;
   color:grey;
+=======
+
+.intro {
+  position:relative;
+  font-weight:500;
+  color:darkgrey;
+  letter-spacing:2px;
+  z-index:1;
+  top:-15px;
+  font-size:1.5rem;
+  background:#292929;
+>>>>>>> Stashed changes
 }
 
 #container-intro {
   position:relative;
+<<<<<<< Updated upstream
   width:350px !important;
   height:5px !important;
   padding:30px 0px !important;
@@ -318,6 +378,13 @@ ul {
   text-align:center;
   line-height: 5px;
 
+=======
+  padding:20px 0px !important;
+  left:20px;
+  bottom:20px;
+  text-align:center;
+  z-index:-1;
+>>>>>>> Stashed changes
 }
 
 #time {
@@ -328,6 +395,13 @@ ul {
   font-weight:900;
   text-underline-position: below;
 }
+<<<<<<< Updated upstream
+=======
+.uk-slideshow-items {
+  position:absolute;
+  min-height:50vh !important
+}
+>>>>>>> Stashed changes
 
 @media screen and (min-width: 800px) and (max-width:1024px) {
   .circle {
@@ -336,9 +410,15 @@ ul {
   
   .photo {
     z-index:-1;
+<<<<<<< Updated upstream
     top:-13vw;
     left:3vw;
     transform:scale(.6);
+=======
+    left:15vw;
+    width:25%;
+    height:25%;
+>>>>>>> Stashed changes
   }
 }
 
@@ -349,9 +429,14 @@ ul {
   
   .photo {
     z-index:-1;
+<<<<<<< Updated upstream
     top:-13vw;
     left:3vw;
     transform:scale(.6);
+=======
+    top:5px;
+    left:3vw;
+>>>>>>> Stashed changes
   }
 
   #time {
@@ -359,23 +444,38 @@ ul {
   }
 
   .intro {
+<<<<<<< Updated upstream
     left:-7vw;
   }
 
   #container-intro {
     left:-8vw; 
+=======
+    left:30vw;
+    width:50%;
+  }
+
+  #container-intro {
+    left:20vw; 
+    width:70%;
+>>>>>>> Stashed changes
   }
 }
 
 @media screen and (max-width: 640px) {
   .uk-navbar {
+<<<<<<< Updated upstream
     width: 88.5%;
     position: fixed;
     bottom: 15vh;
+=======
+  transform:scale(.60) translateX(-27vw);
+>>>>>>> Stashed changes
   }
 
   .photo {
     z-index:-1;
+<<<<<<< Updated upstream
     top:-3rem;
     left:5vw;
   }
@@ -384,10 +484,22 @@ ul {
     z-index:10;
     left:-2rem;
     transform:scale(.7);
+=======
+    width:initial;
+    height:40%
+  }
+
+  #container-intro {
+    font-size:12px;
+    padding:5px !important;
+    left:0;
+    bottom:4vh;
+>>>>>>> Stashed changes
     margin:0;
   }
 
   .intro {
+<<<<<<< Updated upstream
     left:10.5rem;
     top:-4.5rem;
   }
@@ -401,6 +513,10 @@ ul {
     left:5rem;
     top:-6rem;
     right:0;
+=======
+    top:6vh;
+    padding:5px !important;
+>>>>>>> Stashed changes
   }
 
   .circle {
@@ -410,6 +526,7 @@ ul {
 }
 
 @media screen and (max-width: 320px) {
+<<<<<<< Updated upstream
   
   .intro {
     left:9rem;
@@ -455,4 +572,19 @@ ul {
     background:none;
   }
 
+=======
+  .photo {
+    z-index:-1;
+    width:initial;
+    height:40%
+  }
+
+  #container-intro {
+    bottom:8vh;
+  }
+
+  .intro {
+    top:5vh;
+  }
+>>>>>>> Stashed changes
 }

@@ -1,21 +1,21 @@
 nav.uk-navbar(uk-navbar='')
   .uk-navbar-center
-    ul.uk-navbar-nav.uk-breadcrumb
-      li.uk-background-secondary
+    ul.uk-navbar-nav
+      li.uk-background-secondary.uk-margin-small-right
         a#top(href="#top", uk-scroll='', uk-icon="chevron-up")
-      li
+      li.uk-margin-small-left
         a(href='#divAbout', uk-scroll='') Sobre Mim
-      li
-        a(href='#divHability', uk-scroll='') Experi&ecirc;ncia
-      li
+      li.uk-margin-small-left
+        a(href='#divFormacao', uk-scroll='') Experi&ecirc;ncia
+      li.uk-margin-small-left
         a(href='#divProjects', uk-scroll='') Projetos
-      li
+      li.uk-margin-left
         a(href='#modal-full', uk-toggle='') Contato
         #modal-full.uk-modal-full(uk-modal='')
           .uk-modal-dialog
             button.uk-modal-close-full.uk-close-large(type='button', uk-close='')
             .uk-grid-collapse.uk-flex-middle.modaldiv(class='uk-child-width-1-2@s', uk-grid='')
-              .uk-background-cover.contactWallpaper(style="\
+              .uk-background-cover.contactWallpaper(class="uk-visible@s",style="\
               background-image: url('https://cdn.wallpapersafari.com/74/77/GOsm1H.gif');\
               ", uk-height-viewport='')
               .uk-padding-small.uk-background-muted
@@ -30,8 +30,8 @@ nav.uk-navbar(uk-navbar='')
                     .uk-margin
                       textarea#msg.uk-textarea(name="msg", placeholder="Digite sua mensagem", cols="2")
                     .uk-margin-remove.uk-text-center
-                      a(href="#", uk-icon="icon:  github-alt; ratio: 1").uk-padding
-                      a(href="#", uk-icon="icon: linkedin; ratio: 1").uk-padding
-                      a(href="#", uk-icon="icon: whatsapp; ratio: 1").uk-padding
+                      a(href="https://github.com/lcds90", target="_blank", uk-icon="icon:  github-alt; ratio: 1").uk-padding
+                      a(href="https://linkedin.com/in/lcds90/", target="_blank", uk-icon="icon: linkedin; ratio: 1").uk-padding
+                      a(href="https://api.whatsapp.com/send/?phone=5511949040112", target="_blank", uk-icon="icon: whatsapp; ratio: 1").uk-padding
                     .uk-margin.uk-text-center
                       a#sendMail(href="#", uk-icon="icon: check; ratio: 1").uk-margin.uk-button.uk-width-1-1.uk-button-danger

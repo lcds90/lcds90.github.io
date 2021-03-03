@@ -1,17 +1,17 @@
-#divAbout(class="texts uk-width-1-1 uk-margin-remove@s uk-padding-small uk-padding-remove-bottom@s")
+#divAbout(class="texts uk-width-1-1 uk-margin-remove@s uk-padding-small uk-padding-remove-bottom@s uk-margin-auto-left uk-margin-auto-right")
   hr.uk-divider-icon
-  .uk-padding-small(,uk-grid='')
+  .uk-padding-small.uk-margin-auto-left.uk-margin-auto-right(uk-grid='')
     #about-title.uk-width-1-1.uk-padding-remove
       h2.uk-heading-bullet Sobre mim
-    div#about-divl(class="animate-right uk-width-1-1 uk-width-1-2@s uk-padding-small uk-padding-remove@s")
+    div#about-divl(class="uk-relative animate-right uk-text-center uk-padding-small uk-padding-remove@s")
       q
-        | Desde cedo sempre fui apaixonado por tecnologia e m&uacute;sica, e
-        | explorar-la s&oacute; me fez cada vez mais estudar sobre o assunto
+        | Desde cedo sempre fui apaixonado por tecnologia, e
+        | explorar-la s&oacute; me faz cada vez mais estudar sobre o assunto
       hr
-      p.uk-text-small
+      p.uk-text-small.uk-text-left
         | Atrav&eacute;s da influ&ecirc;ncia que tive desde cedo atrav&eacute;s de jogos,
         | acabei me interessando por quest&otilde;es sobre o desenvolvimento de
-        | tecnologias e inclusive at&eacute; estudos sobre produ&ccedil;&atilde;o musical.
+        | tecnologias.
         br
         |                   Seguindo dessa ambi&ccedil;&atilde;o que obtive e reflex&atilde;o sobre os avan&ccedil;os
         |                   da tecnologia com o tempo, busquei determina&ccedil;&atilde;o para
@@ -24,9 +24,10 @@
         |                   conhecimentos voltado ao desenvolvimento sobre a an&aacute;lise e o
         |                   desenvolvimento de sistemas.
         br
-    div#about-divr(class="uk-visible@s animate-left uk-padding uk-width-1-2")
-      img#gif(src='img/art.gif', alt='')
-    div.uk-position-relative.uk-width-1-1.uk-padding-small.uk-margin-small(style="margin-left: 50px")
+    //- div#about-divr(class="uk-visible@s animate-left uk-padding uk-width-1-2")
+      //- img#gif(src='img/art.gif', alt='')
+      //- #circleType
+    //- div.uk-position-relative.uk-width-1-1.uk-padding-small.uk-margin-small(style="margin-left: 50px")
       div#links.uk-padding-small.uk-margin-small.uk-grid
         div(class="uk-width-1-1 uk-width-1-2@s uk-flex uk-flex-center")
           .circle-links

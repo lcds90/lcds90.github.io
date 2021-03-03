@@ -1,31 +1,12 @@
-#divProjects.uk-width-1-1
-  hr.uk-divider-icon
-  h2.uk-text-center
-    | Meus Projetos
-  .uk-position-relative.uk-light(tabindex='-1', uk-slideshow='animation: pull')
-    ul.uk-slideshow-items
-      li
-        div.uk-flex.uk-flex-center
-          img(src='img/art.gif', alt='')
-          .uk-transition-slide-bottom.uk-position-bottom.uk-overlay.uk-overlay-primary
-            p.uk-h4.uk-margin-remove
-              a teste
-              a teste2
-      li
-        div.uk-flex.uk-flex-center
-          img(src='img/unifcv.png', alt='')
-          .uk-transition-slide-bottom.uk-position-bottom.uk-overlay.uk-overlay-primary
-            p.uk-h4.uk-margin-remove
-              a teste
-              a teste2
-      li
-        div.uk-flex.uk-flex-center
-          img(src='img/uninove.png', alt='')
-          .uk-transition-slide-bottom.uk-position-bottom.uk-overlay.uk-overlay-primary
-            p.uk-h4.uk-margin-remove
-              a teste
-              a teste2
-    a.uk-position-center-left.uk-position-small.uk-background-secondary(href='#', uk-slidenav-previous='', uk-slideshow-item='previous')
-    a.uk-position-center-right.uk-position-small.uk-background-secondary(href='#', uk-slidenav-next='', uk-slideshow-item='next')
-
-  span#projects
+div#divProjects(class="uk-width-1-1 uk-padding-small")
+  div(class="uk-card uk-padding-remove@s uk-margin-remove@s uk-padding-small")
+    h2.uk-heading-line.uk-text-center
+      span Meus Projetos
+    #projetos(class ="uk-card-body uk-child-width-1-1 uk-child-width-1-4@s")
+      button.uk-button.uk-button-default(type='button' uk-toggle='target: #toggle-animation-php; animation:  uk-animation-slide-left, uk-animation-slide-bottom') PHP
+      button.uk-button.uk-button-default(type='button' uk-toggle='target: #toggle-animation-node; animation:  uk-animation-slide-left, uk-animation-slide-bottom') Node
+      button.uk-button.uk-button-default(type='button' uk-toggle='target: #toggle-animation-vue; animation:  uk-animation-slide-left, uk-animation-slide-bottom') Vue
+      button.uk-button.uk-button-default.uk-button-secondary(type='button' uk-toggle='target: #toggle-animation-gdscript; animation:  uk-animation-slide-left, uk-animation-slide-bottom') Jogos
+      .uk-width-2xlarge.uk-padding-remove.uk-margin-remove#sectionProjects
+        include ./projects-php.pug
+        
