@@ -13,7 +13,7 @@ var classnames = {
 var anim = new AnimationClass(true);
 
 anim.intro("#body", ".line", "#time");
-anim.nameComponent(classnames.intro, "Leonardo Santos");
+// anim.nameComponent(classnames.intro, "Leonardo Santos");
 anim.removeAttr(classnames.top, "uk-scrollspy");
 anim.removeAttr(classnames.bottom, "uk-scrollspy");
 anim.removeAttr(classnames.left, "uk-scrollspy");
@@ -63,7 +63,7 @@ document
             "uk-scrollspy",
             "cls: uk-animation-slide-bottom; delay: 500; repeat: true"
           );
-          anim.setAnimations(
+/*           anim.setAnimations(
             "#about-divl",
             "uk-scrollspy",
             "cls: uk-animation-slide-left; repeat: true"
@@ -72,7 +72,7 @@ document
             "#about-divr",
             "uk-scrollspy",
             "cls: uk-animation-slide-right; repeat: true"
-          );
+          ); */
           anim.setAnimations(
             "#links",
             "uk-scrollspy",

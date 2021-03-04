@@ -19,12 +19,11 @@ class AnimationClass {
       };
     }
   }
-
+/* 
   nameComponent(divname, str) {
     let divName = document.querySelectorAll(divname);
     let string = str.split("");
 
-    console.log(divName);
     for (let i = 0; i < string.length; i++) {
       string[i] = `<span class="sl${i + 1}">${string[i]}</span>`;
     }
@@ -35,7 +34,7 @@ class AnimationClass {
     for (let e = 0; e < divName.length; e++) {
       divName[e].innerHTML = string;
     }
-  }
+  } */
 
   detectTime(divname) {
     let greeting;

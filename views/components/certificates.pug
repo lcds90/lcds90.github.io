@@ -1,10 +1,31 @@
-.uk-position-relative.uk-visible-toggle.uk-light(tabindex='-1' uk-slideshow='')
-  ul.uk-slideshow-items(style="min-height:500px !important")
+
+#divSlide.uk-position-relative(uk-slideshow='autoplay: true; pause-on-hover: true; autoplay-interval: 2500')
+  ul.uk-slideshow-items()
     li
       img(src='img/qualificacao-profissional.png' alt='')
+      a(href="#modal-qualificacao",  uk-toggle)
+        span(uk-icon="expand")
+        #modal-qualificacao.uk-flex-top(uk-modal='')
+          .uk-modal-dialog.uk-width-auto.uk-margin-auto-vertical
+            button.uk-modal-close-outside(type='button' uk-close='')
+            img(src='img/qualificacao-profissional.png' alt='')
+
     li
-      img(src='img/certificado-node.jpg' alt='')
+      img(src='img/certificado-node.png' alt='')
+      a(href="#modal-node",  uk-toggle)
+        span(uk-icon="expand")
+        #modal-node.uk-flex-top(uk-modal='')
+          .uk-modal-dialog.uk-width-auto.uk-margin-auto-vertical
+            button.uk-modal-close-outside(type='button' uk-close='')
+            img(src='img/certificado-node.png' alt='')
     li
-      img(src='img/certificado-php.jpg' alt='')
-  a.uk-position-center-left.uk-position-small.uk-hidden-hover(href='#' uk-slidenav-previous='' uk-slideshow-item='previous')
-  a.uk-position-center-right.uk-position-small.uk-hidden-hover(href='#' uk-slidenav-next='' uk-slideshow-item='next')
+      img(src='img/certificado-php.png' alt='')
+      a(href="#modal-php",  uk-toggle)
+        span(uk-icon="expand")
+        #modal-php.uk-flex-top(uk-modal='')
+          .uk-modal-dialog.uk-width-auto.uk-margin-auto-vertical
+            button.uk-modal-close-outside(type='button' uk-close='')
+            img(src='img/certificado-node.png' alt='')
+
+  a.uk-position-center-left.uk-position-small.uk-hidden-hover.uk-background-secondary(href='#' uk-slidenav-previous='' uk-slideshow-item='previous')
+  a.uk-position-center-right.uk-position-small.uk-hidden-hover.uk-background-secondary(href='#' uk-slidenav-next='' uk-slideshow-item='next')
