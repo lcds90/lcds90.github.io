@@ -1,8 +1,8 @@
-#toggle-animation-php(hidden, uk-grid, class="uk-margin@m uk-child-width-1-2@m").uk-margin-remove.uk-padding-remove.uk-child-width-1-1.uk-text-center.uk-grid-collapse
+#toggle-animation-front(hidden, uk-grid, class="uk-margin@m uk-child-width-1-2@m").uk-margin-remove.uk-padding-remove.uk-child-width-1-1.uk-text-center.uk-grid-collapse
     .uk-background-secondary.uk-margin-small-top
-        img.uk-responsive-width.uk-responsive-height.reduce(src="img/php.png", alt="")
+        img.uk-responsive-width.uk-responsive-height.reduce(src="img/html-css-js.png", alt="")
     div.uk-flex.uk-flex-column.uk-background-muted(class="uk-margin@m")
-        each project in projects.php
+        each project in projects.front
             a.uk-button.uk-button-default.uk-margin-bottom.uk-padding-remove(href=`#modal-${project.id}` uk-toggle='') #{project.title}
             div(id=`modal-${project.id}`, uk-modal='')
                 .uk-modal-dialog
@@ -26,6 +26,6 @@
                     .uk-modal-footer
                         .uk-child-width-1-1(class="uk-child-width-1-2@m", uk-grid)
                             div
-                                | !{project.desc[0]}
+                                | #{project.desc[0]}
                             .uk-text-small
-                                | !{project.desc[1]}
+                                | #{project.desc[1]}
