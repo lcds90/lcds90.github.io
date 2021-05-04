@@ -3,9 +3,15 @@ class AnimationClass {
     this.once = once;
   }
   intro(div_body, div_line, div_time) {
+
+    setTimeout(()=>{
+    console.clear();
     console.log(
       "Seja bem-vindo ao portfolio de Leonardo Conceição dos Santos."
     );
+    }, 20000)
+
+
     this.detectTime(div_time);
 
     this.animationStart(div_line, div_body);
@@ -55,18 +61,22 @@ class AnimationClass {
   letter(div, str1, str2, str3) {
     var typewriter = new Typewriter(div, {
       loop: true,
+      delay: 25
     });
 
-    typewriter
+    setTimeout(function() {
+      typewriter
       .typeString(str1)
-      .pauseFor(4000)
+      .pauseFor(2000)
       .deleteChars(9)
       .typeString(str2)
-      .pauseFor(4000)
+      .pauseFor(2000)
       .deleteAll()
       .typeString(str3)
-      .pauseFor(6000)
+      .pauseFor(3000)
       .start();
+    }, 8000)
+
   }
 
   setAnimations(classname, attr, cls) {

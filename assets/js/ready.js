@@ -28,13 +28,13 @@ anim.removeAttr(classnames.fade, "uk-scrollspy");
 } */
 
 setTimeout(function () {
-  // anim.activeAnimation();
+
 
   anim.letter(
     "#container-intro",
-    "Desenvolvimento Front-End",
-    "Back-End",
-    "Em constante evolução ao fullstack! :)"
+    "Estudando desenvolvimento front-end",
+    "back-end",
+    "Desenvolvedor de sistemas web em constante aprendizado!"
   );
   anim.setAnimations(
     classnames.circle,

@@ -1,19 +1,11 @@
-div#divProjects(class="uk-width-1-1 uk-padding-small")
-  div(class="uk-card uk-padding-remove@s uk-margin-remove@s uk-padding-small")
+div#divProjects(class="uk-width-1-1 uk-padding-remove")
+  div(class="uk-card uk-padding-remove@s uk-margin-remove@s uk-padding-remove")
     h2.uk-heading-line.uk-text-center
       span Meus Projetos
-    #projetos(class ="uk-card-body uk-child-width-1-1 uk-child-width-expand@m", uk-grid)
-      div.uk-padding-remove.uk-margin-remove
-        a.uk-width-1-1.uk-button.uk-button-default( type='button' uk-toggle='target: #toggle-animation-front; animation:  uk-animation-slide-top, uk-animation-fade') Front-End
-      div.uk-padding-remove.uk-margin-remove
-        button.uk-width-1-1.uk-button.uk-button-default.uk-button-primary(type='button' uk-toggle='target: #toggle-animation-games; animation:  uk-animation-slide-top, uk-animation-fade') Jogos
-      div.uk-padding-remove.uk-margin-remove
-        button.uk-width-1-1.uk-button.uk-button-default.uk-button-secondary(type='button' uk-toggle='target: #toggle-animation-node; animation:  uk-animation-slide-bottom, uk-animation-fade') Node
-      div.uk-padding-remove.uk-margin-remove
-        button.uk-width-1-1.uk-button.uk-button-default.uk-button-secondary(type='button' uk-toggle='target: #toggle-animation-php; animation:  uk-animation-slide-bottom, uk-animation-fade') PHP
-    #sectionProjects.uk-width-1-1.uk-padding-remove.uk-margin-remove
-        include ./projects-front.pug
-        include ./projects-games.pug
-        include ./projects-node.pug
-        include ./projects-php.pug
-        
+    //- #languages(uk-grid,class="uk-card-body uk-child-width-1-1 uk-child-width-1-4@m uk-flex uk-flex-center uk-flex-middle")
+    #sectionProjects.uk-width-1-1.uk-padding-remove.uk-margin
+      include ./projects-front.pug
+      include ./projects-games.pug
+      include ./projects-node.pug
+      include ./projects-php.pug
+

@@ -3,6 +3,8 @@ html,
 body {
   background-color: #8c8c8c;
   font-family: "Lato", sans-serif;
+  height: 100vh;
+  width: 100vw;
 }
 
 h1,
@@ -45,6 +47,27 @@ html {
   box-shadow: 0px 10px 1px -1px rgba(0, 0, 0, 0.25);
 }
 
+.techs {
+  padding: 10px !important;
+    width: 75%;
+    margin: auto;
+  border: 5px solid grey;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px grey;
+    background-color: darkgrey;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.techs img {
+  
+  outline: 5px rgba(0,0,0,.15);
+  outline-offset: 4px;
+  outline-style: double;
+
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -70,10 +93,11 @@ html {
   width: 88.5%;
   position: fixed;
   bottom: 2vh;
+  left: 5vw;
 }
 
 .uk-navbar-nav {
-  filter: drop-shadow(0px 0px 25px #ffffff99);
+  filter: drop-shadow(0px 0px 25px #ffffff3d);
 }
 
 .uk-navbar-nav li a {
@@ -189,9 +213,9 @@ html {
 .circle-links a img,
 #sectionProjects img {
   width: auto;
-  max-width: 80%;
+  max-width: 90%;
   height: auto;
-  max-height: 80%;
+  max-height: 90%;
   object-fit: contain;
 }
 
@@ -308,6 +332,7 @@ ul {
 
 #container-intro {
   position: relative;
+  font-size:0.9rem;
   padding: 20px 0px !important;
   left: 20px;
   bottom: 20px;
@@ -325,24 +350,67 @@ ul {
 }
 #divSlide .uk-slideshow-items {
   position: relative;
-  background:transparent;
+  background: transparent;
   outline: 5px #a8a6a8 double;
   outline-offset: 25px;
 }
 
 #divSlide .uk-slideshow-items li img {
-  position:absolute;
-  width:80%;
-  left: 0; 
-  right: 0; 
-  top:0;
-  bottom:0;
-  margin: auto; 
+  position: absolute;
+  width: 95%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 #divSlide {
   background-color: #f5f5f5;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='54' height='54' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23d0d0d0' fill-opacity='0.49'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.49'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+}
+.uk-modal-footer
+  > div
+  > ul
+  > li
+  > img {
+  height: 100%;
+}
+
+#toggle-animation-front,
+#toggle-animation-games,
+#toggle-animation-node,
+#toggle-animation-php {
+  background-color: rgba(0,0,0,.05);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 600px;
+  margin-top: 50px !important;
+}
+
+#toggle-animation-front div:last-child,
+#toggle-animation-games div:first-child,
+#toggle-animation-node div:last-child,
+#toggle-animation-php div:first-child {
+  border: rgb(120, 120, 120) 5px double;
+  border-left: 2.5px solid #222;
+  background-color: rgb(180, 180, 180);
+  height: 240px;
+  overflow-y: auto;
+  margin-top:50px;
+  margin-bottom:50px;
+  border-radius:25px;
+}
+
+#toggle-animation-front div:first-child,
+#toggle-animation-games div:last-child,
+#toggle-animation-node div:first-child,
+#toggle-animation-php div:last-child {
+  height: 340px;
+  overflow-y: auto;
+  border: rgb(120, 120, 120) 5px double;
+  border-left: 2.5px solid #222;
+  background-color: rgb(150, 150, 150);
+  border-radius:50px;
 }
 
 @media screen and (min-width: 800px) and (max-width: 1024px) {
@@ -385,9 +453,8 @@ ul {
 }
 
 @media screen and (max-width: 640px) {
-  
   .uk-navbar {
-    transform: scale(0.6) translateX(-27vw);
+    transform: scale(0.65) translateX(-15vw);
   }
 
   .photo {
@@ -415,7 +482,7 @@ ul {
   }
 
   #divSlide .uk-slideshow-items li img {
-    width:85%;
+    width: 85%;
   }
 }
 

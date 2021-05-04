@@ -21,17 +21,22 @@ nav.uk-navbar(uk-navbar='')
               .uk-padding-small.uk-background-muted
                 h1.uk-text-center Entre em contato comigo
                 div.uk-flex.uk-flex-center
-                  form.uk-form-horizontal.uk-margin-large
-                    .uk-margin
-                      input#name.uk-input(type='text', name="name", placeholder='Nome')
-                    .uk-margin 
-                      input#email.uk-input(type='text', name="email", placeholder='E-mail')
+                  .uk-margin-remove.uk-text-center
+                    a(title="Curriculo" href="https://drive.google.com/file/d/1b5HLHddXo-erTF-B2ZdKK0nHh3W_vujG/view?usp=sharing", target="_blank", uk-icon="icon:  file-pdf; ratio: 1").uk-padding
+                    a(title="Github" href="https://github.com/lcds90", target="_blank", uk-icon="icon:  github-alt; ratio: 1").uk-padding
+                    a(title="Linkedin" href="https://linkedin.com/in/lcds90/", target="_blank", uk-icon="icon: linkedin; ratio: 1").uk-padding
+                    a(title="Whatsapp" href="https://api.whatsapp.com/send/?phone=5511949040112", target="_blank", uk-icon="icon: whatsapp; ratio: 1").uk-padding
+                  //- form.uk-form-horizontal.uk-margin-large
+                    //- .uk-margin
+                    //-   input#name.uk-input(type='text', name="name", placeholder='Nome')
+                    //- .uk-margin 
+                    //-   input#email.uk-input(type='text', name="email", placeholder='E-mail')
 
-                    .uk-margin
-                      textarea#msg.uk-textarea(name="msg", placeholder="Digite sua mensagem", cols="2")
-                    .uk-margin-remove.uk-text-center
-                      a(href="https://github.com/lcds90", target="_blank", uk-icon="icon:  github-alt; ratio: 1").uk-padding
-                      a(href="https://linkedin.com/in/lcds90/", target="_blank", uk-icon="icon: linkedin; ratio: 1").uk-padding
-                      a(href="https://api.whatsapp.com/send/?phone=5511949040112", target="_blank", uk-icon="icon: whatsapp; ratio: 1").uk-padding
-                    .uk-margin.uk-text-center
-                      a#sendMail(href="#", uk-icon="icon: check; ratio: 1").uk-margin.uk-button.uk-width-1-1.uk-button-danger
+                    //- .uk-margin
+                    //-   textarea#msg.uk-textarea(name="msg", placeholder="Digite sua mensagem", cols="2")
+                    //- .uk-margin-remove.uk-text-center
+                    //-   a(href="https://github.com/lcds90", target="_blank", uk-icon="icon:  github-alt; ratio: 1").uk-padding
+                    //-   a(href="https://linkedin.com/in/lcds90/", target="_blank", uk-icon="icon: linkedin; ratio: 1").uk-padding
+                    //-   a(href="https://api.whatsapp.com/send/?phone=5511949040112", target="_blank", uk-icon="icon: whatsapp; ratio: 1").uk-padding
+                    //- .uk-margin.uk-text-center
+                    //-   a#sendMail(href="#", uk-icon="icon: check; ratio: 1").uk-margin.uk-button.uk-width-1-1.uk-button-danger
