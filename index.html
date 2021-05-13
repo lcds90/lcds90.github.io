@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Web</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -14,30 +16,31 @@
             <h1>Portfólio</h1>
             <h2>Leonardo Conceição dos Santos</h2>
 
-            <p id="about-me">
-                <img width="50%" src="https://avatars.githubusercontent.com/u/44562511?v=4" alt="" srcset="">
-                <br>
-                Sou <em>apaixonado</em> por tecnologia, música e gatos e estou motivadisssssimo pela Trybe para aprender
-                a
-                trilhar meu caminho rumo ao <strong>desenvolvimento web</strong>!
-            </p>
+            <div id="about-me">
+                <div>
+                    <img src="https://avatars.githubusercontent.com/u/44562511?v=4" alt="" srcset="">
+                </div>
+                <p class="about-me__text--one">
+                    <strong>Sobre mim</strong><br>
+                </p>
+                <p class="about-me__text--two">
+                    <em>Apaixonado por tecnologia, música e gatos</em>
+                    meu objetivo é me desenvolver profissionalmente como <strong>desenvoledor web</strong> capacitado, e
+                    a Trybe é o lugar certo para alcançar isso!<br>
+                </p>
+            </div>
         </section>
-
-        <section>
-            <h3>Habilidades</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>React</li>
-                <li>Angular</li>
-                <li>Node.Js</li>
+        <section id="sectionMenu">
+            <h3>Menu</h3>
+            <ul id="menu">
+                <li><a href="#about-me">Sobre Mim</a></li>
+                <li><a href="#formation">Formação</a></li>
+                <li><a href="#skills">Habilidades</a></li>
             </ul>
             <p>
         </section>
         <section>
-            <a href="#about-me">Sobre mim</a>
-            <p>Canais de tecnologia que curto bastante!</p>
+            <p>Entre em contato comigo!</p>
             <ol>
                 <li>
                     <a href="https://www.youtube.com/user/codigofontetv">Código Fonte TV</a>
@@ -50,6 +53,8 @@
             </p>
         </section>
     </main>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script> -->
+    <!-- <script src="js/main.js"></script> -->
 </body>
 
 </html>

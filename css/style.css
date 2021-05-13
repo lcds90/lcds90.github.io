@@ -1,0 +1,141 @@
+:root {
+    --primary: #2fc18c;
+    --secondary: #036b52;
+    --primary-text: #1b8034;
+    --secondary-text: #0c4e3f;
+}
+
+body {
+    width:100%;
+    height: 100%;
+}
+
+main {
+    background-color: rgb(232, 255, 228);
+    display:grid;
+    max-width:100%;
+    height: 100%;
+    grid-template-columns: 1fr 200px 200px;
+}
+
+section {
+    padding: 25px;
+}
+
+section:nth-of-type(even){
+    background-color: rgba(0,0,0, .25);
+    padding:25px;
+    color: white;
+}
+
+section:not(:first-child){
+    border-left: .5px double rgba(0,0,0, .15);
+}
+
+h1 {
+    font-size:2.5rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--secondary-text);
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    color: var(--primary-text);
+    font-size: 2.5rem;
+    padding-bottom: 5px;
+    border-bottom: .5px solid black;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: 900;
+}
+
+#menu {
+    background-color: var(--secondary);
+    padding: 25px;
+    position: sticky;
+    top:5vh;
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0,0,0, .15);
+}
+
+#menu > li {
+    margin:15px 0;
+}
+
+#menu > li > a {
+    color:white;
+    text-underline-offset: 5px;
+}
+
+#about-me {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 200px;
+    grid-template-areas: "photo photo" "text1 text2";
+    padding-right:25px;
+    column-gap: 100px;
+    align-items: center;
+    border: 10px double var(--primary-text);
+    height: 60vh;
+    margin-top: 10vh;
+}
+
+#about-me > .about-me__text--one {
+    position: relative;
+    letter-spacing: .5px;
+    grid-area: text1;
+}
+
+
+#about-me > .about-me__text--two {
+    position: relative;
+    letter-spacing: .5px;
+    grid-area: text2;
+}
+
+#about-me > .about-me__text--two::after {
+    content: '"';
+    position: absolute;
+    right:0;
+    font-size: 5rem;
+    font-style: italic;
+    color: lightgray;
+}
+
+
+#about-me > .about-me__text--two::before {
+    content: '"';
+    bottom:2.5vh;
+    left:-5vw;
+    position: absolute;
+    font-size: 5rem;
+    font-style: italic;
+    color: lightgray;
+}
+
+#about-me > div {
+    width:100%;
+    grid-area: photo;
+    display: flex;
+    justify-content: center;
+}
+
+#about-me > div > img {
+    margin-top: 25px;
+    width:200px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
