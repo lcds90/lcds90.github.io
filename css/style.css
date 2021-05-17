@@ -60,7 +60,7 @@ strong {
     font-weight: 900;
 }
 
-#menu {
+.menu {
     background-color: var(--secondary);
     padding: 25px;
     position: sticky;
@@ -69,13 +69,17 @@ strong {
     box-shadow: 0 0 5px rgba(0,0,0, .15);
 }
 
-#menu > li {
+.menu > li {
     margin:15px 0;
 }
 
-#menu > li > a {
+.menu > li > a {
     color:white;
-    text-underline-offset: 5px;
+    text-decoration: none;
+}
+
+.indications {
+    font-size: 0.8rem
 }
 
 #about-me {
