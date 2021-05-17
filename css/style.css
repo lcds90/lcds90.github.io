@@ -5,7 +5,7 @@
     --secondary-text: #0c4e3f;
 }
 
-body {
+html, body {
     width:100%;
     height: 100%;
 }
@@ -16,10 +16,6 @@ main {
     max-width:100%;
     height: 100%;
     grid-template-columns: 1fr 200px 200px;
-}
-
-section {
-    padding: 25px;
 }
 
 section:nth-of-type(even){
@@ -83,59 +79,83 @@ strong {
 
 #about-me {
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 300px 1fr;
     grid-template-rows: 1fr 200px;
-    grid-template-areas: "photo photo" "text1 text2";
-    padding-right:25px;
-    column-gap: 100px;
+    grid-template-areas: "photo texts";
+    column-gap: 20px;
     align-items: center;
     border: 10px double var(--primary-text);
-    height: 60vh;
-    margin-top: 10vh;
-}
-
-#about-me > .about-me__text--one {
+    margin: 25px;
+    height: 500px;
     position: relative;
-    letter-spacing: .5px;
-    grid-area: text1;
 }
 
 
-#about-me > .about-me__text--two {
+.about-me__text {
     position: relative;
-    letter-spacing: .5px;
-    grid-area: text2;
+    grid-area: texts;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(0,0,0, .15);
+    padding: 0 60px;
 }
 
-#about-me > .about-me__text--two::after {
+.about-me__text--skills {
+    position: relative;
+    height: 100%;
+    margin-top:100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#about-me > .about-me__text--skills > div {
+    width: 100%;
+    height: 60%;
+}
+
+.about-me__text--skills > div > span {
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.about-me__text p {
+    margin-top: 100px;
+    position: relative;
+}
+
+.about-me__text p:first-child:after {
     content: '"';
     position: absolute;
     right:0;
+    top: 10vh;
     font-size: 5rem;
     font-style: italic;
-    color: lightgray;
+    color: grey;
 }
 
 
-#about-me > .about-me__text--two::before {
+.about-me__text p:first-child:before {
     content: '"';
     bottom:2.5vh;
     left:-5vw;
     position: absolute;
     font-size: 5rem;
     font-style: italic;
-    color: lightgray;
+    color: black;
 }
 
-#about-me > div {
+#about-me > div:nth-of-type(1) {
     width:100%;
     grid-area: photo;
-    display: flex;
-    justify-content: center;
 }
 
 #about-me > div > img {
+    position: absolute;
+    top: 10vh;
+    left:0;
     margin-top: 25px;
-    width:200px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    width:300px;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
 }
