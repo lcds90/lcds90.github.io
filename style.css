@@ -84,16 +84,16 @@ section {
   position: relative;
 }
 
-section:nth-of-type(1){
+section:nth-of-type( 1 ) {
   border-bottom: 2px rgb(47, 193, 140) double;
-  box-shadow: 0 10px 5px rgba(19, 83, 60, .15);
+  box-shadow: 0 0 10px 5px rgba(19, 83, 60, 0.15);
   background-color: rgb(234, 255, 247);
 }
 
-section:nth-of-type(1) a{
+section:nth-of-type( 1 ) a {
   position: absolute;
   bottom: 0;
-  right: 0vw;
+  right: 0;
   padding: 20px;
   background-color: rgb(47, 193, 140);
   text-decoration: none;
@@ -101,7 +101,7 @@ section:nth-of-type(1) a{
   cursor: pointer;
 }
 
-section:nth-of-type(1) span{
+section:nth-of-type( 1 ) span {
   position: absolute;
   top: 20vh;
   left: 21vw;
@@ -111,37 +111,37 @@ section:nth-of-type(1) span{
   font-weight: 300;
 }
 
-section:nth-of-type(2){
+section:nth-of-type( 2 ) {
   display: grid;
   grid-template-columns: 0 1fr 1fr 1fr;
 }
 
-section:nth-of-type(2) h2 {
-  position:absolute;
-  top:-40px;
+section:nth-of-type( 2 ) h2 {
+  position: absolute;
+  top: -40px;
   color: rgb(47, 193, 140);
-  text-shadow: .5px .5px 15px rgba(0, 255, 162, 0.5);
+  text-shadow: 0.5px 0.5px 15px rgba(0, 255, 162, 0.5);
   border-bottom: 1px double rgb(33, 37, 41);
   padding: 5px;
   background-color: rgb(33, 37, 41);
   border-radius: 5px;
 }
 
-section:nth-of-type(2) h2:nth-of-type(1) {
+section:nth-of-type( 2 ) h2:nth-of-type( 1 ) {
   left: 5%;
 }
 
-section:nth-of-type(2) h2:nth-of-type(2) {
-  left:35%;
+section:nth-of-type( 2 ) h2:nth-of-type( 2 ) {
+  left: 35%;
 }
 
-section:nth-of-type(2) h2:nth-of-type(3) {
-  left:70%;
+section:nth-of-type( 2 ) h2:nth-of-type( 3 ) {
+  left: 70%;
 }
 
 aside {
   width: 500px;
-  font-size: .75rem;
+  font-size: 0.75rem;
   background-color: rgb(33, 37, 41);
   color: rgb(234, 255, 247);
   padding: 15px;
