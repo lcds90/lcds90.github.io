@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 html {
   width: 100%;
@@ -24,14 +24,15 @@ a {
   top: 0;
   padding: 25px;
   font-size: 1.1rem;
-  background-color: #2fc18c;
+  background-color: rgb(47, 193, 140);
   width: 100%;
   height: 50px;
   display: flex;
   flex-direction: row;
-  border: 5px double #f0f2f5;
+  border: 5px double rgb(240, 242, 245);
   align-items: center;
-  color: #212529;
+  color: rgb(33, 37, 41);
+  z-index: 100;
 }
 
 #cabecalho h1 {
@@ -46,21 +47,22 @@ nav {
 }
 
 nav ul li {
-  color: white;
+  color: rgb(231, 231, 231);
 }
 
 nav ul li a {
-  background-color: #3d495c;
+  background-color: rgb(61, 73, 92);
   padding: 5px;
   width: 250px;
   display: inline-block;
-  color: white;
+  color: rgb(231, 231, 231);
   margin: 1px 0;
 }
 
-/* LINK Criando ancoras na página scroll ir ao topo da Section - https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
+/* LINK Criando ancoras na página scroll ir ao topo da Section
+ tinyurl.com/stackoverflow-anchor */
 
-a.anchor {
+.anchor {
   display: block;
   position: relative;
   top: -250px;
@@ -79,7 +81,75 @@ main {
 section {
   margin: 25px;
   padding: 25px;
+  position: relative;
 }
+
+section:nth-of-type(1){
+  border-bottom: 2px rgb(47, 193, 140) double;
+  box-shadow: 0 10px 5px rgba(19, 83, 60, .15);
+  background-color: rgb(234, 255, 247);
+}
+
+section:nth-of-type(1) a{
+  position: absolute;
+  bottom: 0;
+  right: 0vw;
+  padding: 20px;
+  background-color: rgb(47, 193, 140);
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+section:nth-of-type(1) span{
+  position: absolute;
+  top: 20vh;
+  left: 21vw;
+  width: 700px;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+section:nth-of-type(2){
+  display: grid;
+  grid-template-columns: 0 1fr 1fr 1fr;
+}
+
+section:nth-of-type(2) h2 {
+  position:absolute;
+  top:-40px;
+  color: rgb(47, 193, 140);
+  text-shadow: .5px .5px 15px rgba(0, 255, 162, 0.5);
+  border-bottom: 1px double rgb(33, 37, 41);
+  padding: 5px;
+  background-color: rgb(33, 37, 41);
+  border-radius: 5px;
+}
+
+section:nth-of-type(2) h2:nth-of-type(1) {
+  left: 5%;
+}
+
+section:nth-of-type(2) h2:nth-of-type(2) {
+  left:35%;
+}
+
+section:nth-of-type(2) h2:nth-of-type(3) {
+  left:70%;
+}
+
+aside {
+  width: 500px;
+  font-size: .75rem;
+  background-color: rgb(33, 37, 41);
+  color: rgb(234, 255, 247);
+  padding: 15px;
+  border: inset 5px rgb(234, 255, 247);
+  font-weight: 300;
+  font-style: italic;
+}
+
 
 .artigos {
   display: flex;
@@ -89,12 +159,25 @@ section {
 
 .lado-esquerdo {
   float: left;
-  background-color: red;
-  line-height: 25px;
-  color: green;
+  line-height: 2rem;
+  background-color: rgb(47, 193, 140);
+  padding: 20px;
+  width: 100%;
+  border: rgb(253, 251, 251) double 10px;
 }
 
 .lado-direito {
   float: right;
-  background-color: blueviolet;
+  padding: 20px;
+  background-color: rgb(231, 231, 231);
+  outline: rgb(47, 193, 140) 5px solid;
+  outline-offset: 10px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(47, 193, 140);
+  color: black;
+  padding: 20px 0;
 }

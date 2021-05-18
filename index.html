@@ -5,22 +5,22 @@
 
         NOTE Esse projeto constitui em aplicar todos os conhecimentos adquiridos durante a formação com HTML e CSS, junto com a utilização de Pull Request no Github
         TODO Lista de requisitos
-        ✅ 1. Adicione uma cor de fundo específica para a página
-        ✅ 2. Adicione uma barra superior com um título
-        ✅ 3. Adicione uma foto sua à página
-        ✅ 4. Adicione uma lista de lições aprendidas à página
-        ✅ 5. Crie uma lista de lições que ainda deseja aprender para a página
-        ✅ 6. Adicione um rodapé para a página
-        ✅ 7. Insira pelo menos um link externo na página
-        ✅ 8. Crie um artigo sobre seu aprendizado
-        ✅ 9. Crie uma seção que conta uma passagem sobre seu aprendizado
-        ✅ 10. Aplique elementos HTML de acordo com o sentido e propósito de cada um deles
+        1. Adicione uma cor de fundo específica para a página
+        2. Adicione uma barra superior com um título
+        3. Adicione uma foto sua à página
+        4. Adicione uma lista de lições aprendidas à página
+        5. Crie uma lista de lições que ainda deseja aprender para a página
+        6. Adicione um rodapé para a página
+        7. Insira pelo menos um link externo na página
+        8. Crie um artigo sobre seu aprendizado
+        9. Crie uma seção que conta uma passagem sobre seu aprendizado
+        10. Aplique elementos HTML de acordo com o sentido e propósito de cada um deles
         TODO Bônus
-        ✅ 11. Teste a semântica da sua página está aprovada pelo site CodeSniffer
-        ✅ 12. Adicione uma tabela à página
-        ✅ 13. Utilize o Box model
-        ✅ 14. Altere atributos relacionados as fontes
-        ✅ 15. Posicione o seu artigo e a seção sobre aprendizados um ao lado do outro
+        11. Teste a semântica da sua página está aprovada pelo site CodeSniffer
+        12. Adicione uma tabela à página
+        13. Utilize o Box model
+        14. Altere atributos relacionados as fontes
+        15. Posicione o seu artigo e a seção sobre aprendizados um ao lado do outro
     !SECTION
  -->
 <!DOCTYPE html>
@@ -51,8 +51,10 @@
             <a class="anchor" id="about"></a>
             <img id="minha_foto" src="img/photo.jpg" alt="">
             <a href="http://lcds.me" target="_blank" rel="noopener noreferrer">Meu site</a>
+            <span>Olá, seja bem vindo! Aqui está meu projeto referente a lições aprendidas na Trybe até o momento!</span>
         </section>
         <section>
+            <h2>Lições aprendidas</h2>
             <a class="anchor" id="lessons"></a>
             <ol id="licoes_aprendidas">
                 <li>Unix</li>
@@ -66,7 +68,7 @@
                 <li>Posicionamento CSS</li>
                 <li>HTML Semântico</li>
             </ol>
-
+            <h2>Lições a aprender</h2>
             <ul id="licoes_a_aprender">
                 <li>Javascript</li>
                 <li>DOM</li>
@@ -75,21 +77,29 @@
                 <li>ES6</li>
                 <li>HOF</li>
                 <li>Teste de Unidade</li>
-                <li>Node</li>
-                <li>SQL</li>
-                <li>React</li>
+                <li>Local Storage</li>
+                <li>Lógica de Programação</li>
+                <li>Funções</li>
             </ul>
-
+            <h2>Tecnologias a Aprender</h2>
             <table>
                 <tr>
-                    <th>Teste</th>
-                    <th>Teste</th>
-                    <th>Teste</th>
+                    <th>Nome</th>
+                    <th>Tipo</th>
                 </tr>
                 <tr>
-                    <td>Item 1</td>
-                    <td>Item 2</td>
-                    <td>Item 3</td>
+                    <td>React</td>
+                    <td>Biblioteca</td>
+                </tr>
+
+                <tr>
+                    <td>Node</td>
+                    <td>Ambiente de Execução</td>
+                </tr>
+
+                <tr>
+                    <td>Angular</td>
+                    <td>Framework</td>
                 </tr>
             </table>
 
@@ -97,24 +107,28 @@
         <section class="artigos">
             <a class="anchor" id="resume"></a>
             <article class="lado-esquerdo">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus tellus, sodales quis justo ut,
-                vehicula tincidunt augue. Cras sollicitudin urna quis arcu mollis, ac porta eros ullamcorper.
-                Pellentesque elementum pellentesque est bibendum vulputate. Nunc iaculis ac magna eu interdum. Praesent
-                efficitur eleifend libero at suscipit. Donec at faucibus nibh, rhoncus pellentesque massa efficitur.
+                <p>Atualmente, estou evoluindo ao utilizar o sistema Linux, pois o medo que o terminal dava é surpreendente, mas descobrir que não é um bixo de sete cabeças é um alívio!</p>
+                <p>
+
+                A incentivação de utilizar-lo, tornou tão simples de ver o quão poderoso ele é e facilitador de várias tarefas.
+                </p>
             </article>
             <div class="lado-direito">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus tellus, sodales quis justo ut,
-                vehicula tincidunt augue. Cras sollicitudin urna quis arcu mollis, ac porta eros ullamcorper.
-                Pellentesque elementum pellentesque est bibendum vulputate. Nunc iaculis ac magna eu interdum. Praesent
-                efficitur eleifend libero at suscipit. Donec at faucibus nibh, rhoncus pellentesque massa efficitur.
+                <p>
+                    Uma grande importância sobre o que aprendi foi a respeito do HTML Semântico e sua importância tanto na acessibilidade quanto em relevância quanto a questões de perfomance e SEO.
+                </p>
+                <p>
+
+                </p>
             </div>
+            <aside>
+                "Espero realmente evoluir tanto em soft skills quanto hard skills, pois o mercado necessita de profissionais capacitados e o meu objetivo na Trybe é evoluir nesse quesito, além de poder contribuir com meus colegas e criar networks, quero oferecer o meu melhor!"
+            </aside>
         </section>
-        <aside>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor dui, congue id bibendum id, mollis non
-            velit. Pellentesque posuere justo at est dictum, id iaculis augue pulvinar. Nam erat curae.
-        </aside>
     </main>
-    <footer id="rodape"></footer>
+    <footer id="rodape">
+        Criado por Leonardo Santos 🚀
+    </footer>
 </body>
 
 </html>
